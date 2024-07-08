@@ -23,8 +23,8 @@ header-includes: |
   <meta name="dc.date" content="2024-07-08" />
   <meta name="citation_publication_date" content="2024-07-08" />
   <meta property="article:published_time" content="2024-07-08" />
-  <meta name="dc.modified" content="2024-07-08T19:38:10+00:00" />
-  <meta property="article:modified_time" content="2024-07-08T19:38:10+00:00" />
+  <meta name="dc.modified" content="2024-07-08T19:58:26+00:00" />
+  <meta property="article:modified_time" content="2024-07-08T19:58:26+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -45,9 +45,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/" />
   <meta name="citation_pdf_url" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/c0d248d165b712f4f177f7a586a4dbe789d349af/" />
-  <meta name="manubot_html_url_versioned" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/c0d248d165b712f4f177f7a586a4dbe789d349af/" />
-  <meta name="manubot_pdf_url_versioned" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/c0d248d165b712f4f177f7a586a4dbe789d349af/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/5a003b62c0afbf36ea64555e3bd703ddb2eeb8c7/" />
+  <meta name="manubot_html_url_versioned" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/5a003b62c0afbf36ea64555e3bd703ddb2eeb8c7/" />
+  <meta name="manubot_pdf_url_versioned" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/5a003b62c0afbf36ea64555e3bd703ddb2eeb8c7/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,9 +69,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/c0d248d165b712f4f177f7a586a4dbe789d349af/))
+([permalink](https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/5a003b62c0afbf36ea64555e3bd703ddb2eeb8c7/))
 was automatically generated
-from [xomicsdatascience/transcriptome-proteome-nas-manubot@c0d248d](https://github.com/xomicsdatascience/transcriptome-proteome-nas-manubot/tree/c0d248d165b712f4f177f7a586a4dbe789d349af)
+from [xomicsdatascience/transcriptome-proteome-nas-manubot@5a003b6](https://github.com/xomicsdatascience/transcriptome-proteome-nas-manubot/tree/5a003b62c0afbf36ea64555e3bd703ddb2eeb8c7)
 on July 8, 2024.
 </em></small>
 
@@ -157,6 +157,28 @@ While NAS has been applied to genomic data [@DOI:10.1038/s42256-021-00316-z], it
 We previously showed how machine learning can accurately predict the metabolome from the proteome, and how model interpretation revealed important biological insights [@DOI:10.1093/bioinformatics/btac631]. 
 Here, we extend that work to transcript-to-protein deep learning prediction models and demonstrate that utilizing NAS improved the accuracy. 
 Furthermore, we highlight the potential of model interpretation to identify patterns in transcript-protein relations that underpin biological processes characteristic of a disease state.	 
+
+## Methods {.page_break_before}
+
+### Data Acquisition and Preprocessing 
+
+To facilitate readability and reproducibility, the code for downloading, processing, and splitting data was developed as a multi-class in-house package. 
+The bridge design pattern specifically was used to allow for interchangeability of data source input to expand beyond CPTAC in the future, as well as for allowing custom processing and splitting depending on the experiment. 
+This involved writing an abstract parent data processing class, and individual child classes would utilize compartmentalized class components specific to the experiment. 
+This was done to enable external researchers to trace data processing workflows with ease. 
+
+CPTAC data was downloaded directly from zenodo using the cptac python package [@DOI:10.1021/acs.jproteome.0c00919] separately for each cancer type. 
+Analyses were only performed using transcripts and proteins common between all datasets. 
+
+Cancer-specific datasets were normalized independently of one another. 
+For experiments where each dataset required an identical train-validation split, this normalization was calculated on the training partition then applied to the training and validation partitions both. 
+For the five by two cross validation experiments, it was determined that dataset-specific analyses would be enhanced by the inclusion of all other datasets in the training dataset [Supplementary Figure 1]. 
+In these instances, the train-validation split was applied only to the target dataset, with a split of 0.45, 0.45, and 0.1 for training, validation and testing, respectively. 
+All non-target datasets were normalized on the entire dataset as the training partition, ignoring validation or testing partitioning entirely. 
+In a standard data partition, each dataset had a split of 0.8, 0.1 and 0.1 for training, validation and testing, respectively. 
+
+The final dataset contained data for breast cancer (BRCA), kidney cancer (CCRCC), colon cancer (COAD), brain cancer (GBM), squamous cell cancer (HNSCC), lung cancer (LSCC and LUAD), ovarian cancer (OV), and pancreatic cancer (PDAC) as well as adjacent healthy tissue. 
+59286 transcripts and 7822 proteins were shared across all datasets with a combined number of 1256 samples.  
 
 ## References {.page_break_before}
 
