@@ -4,7 +4,7 @@ CalebCranney
 CCranney
 CCRCC
 COAD
-cptac
+CPTAC
 Cranney
 dataset
 datasets
@@ -28,7 +28,7 @@ PDAC
 Preprocessing
 Proteogenomics
 proteome
-Proteomes
+proteomes
 proteomic
 Proteomics
 reproducibility
