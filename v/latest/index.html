@@ -54,8 +54,8 @@
   <meta name="dc.date" content="2024-07-08" />
   <meta name="citation_publication_date" content="2024-07-08" />
   <meta property="article:published_time" content="2024-07-08" />
-  <meta name="dc.modified" content="2024-07-08T20:56:31+00:00" />
-  <meta property="article:modified_time" content="2024-07-08T20:56:31+00:00" />
+  <meta name="dc.modified" content="2024-07-08T21:40:43+00:00" />
+  <meta property="article:modified_time" content="2024-07-08T21:40:43+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -76,9 +76,9 @@
   <meta name="citation_fulltext_html_url" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/" />
   <meta name="citation_pdf_url" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/d9b5c2384ee5252dca923b2d2c0e81839f05bfd4/" />
-  <meta name="manubot_html_url_versioned" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/d9b5c2384ee5252dca923b2d2c0e81839f05bfd4/" />
-  <meta name="manubot_pdf_url_versioned" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/d9b5c2384ee5252dca923b2d2c0e81839f05bfd4/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/7f0dd5d69740dec5e45ada5be83576053717ad86/" />
+  <meta name="manubot_html_url_versioned" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/7f0dd5d69740dec5e45ada5be83576053717ad86/" />
+  <meta name="manubot_pdf_url_versioned" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/7f0dd5d69740dec5e45ada5be83576053717ad86/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -95,9 +95,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/d9b5c2384ee5252dca923b2d2c0e81839f05bfd4/">permalink</a>)
+(<a href="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/7f0dd5d69740dec5e45ada5be83576053717ad86/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/xomicsdatascience/transcriptome-proteome-nas-manubot/tree/d9b5c2384ee5252dca923b2d2c0e81839f05bfd4">xomicsdatascience/transcriptome-proteome-nas-manubot@d9b5c23</a>
+from <a href="https://github.com/xomicsdatascience/transcriptome-proteome-nas-manubot/tree/7f0dd5d69740dec5e45ada5be83576053717ad86">xomicsdatascience/transcriptome-proteome-nas-manubot@7f0dd5d</a>
 on July 8, 2024.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -235,14 +235,117 @@ The optimal NAS model was benchmarked against other models, including a dummy re
 The results showed that the optimal NAS model consistently outperformed all other models, including the previously optimal random forest model [Figure 1E].</p>
 <div id="fig:overview" class="fignos">
 <figure>
-<img src="images/fig1_overview.svg" style="width:100.0%" data-tag="1" alt="Figure 1: Comparison of methods for predicting the proteome from the transcriptome (A) CPTAC cancer datasets were downloaded from the web and processed to match samples across omic layers. (B) Four primary methods were evaluated for predicting the proteome from the transcriptome. They are a dummy regressor to serve as a benchmark, a random forest regressor, a manually designed neural network, and an optimized neural network chosen via NAS. (C) The primary outline of the NAS search space used to identify the optimized neural network. (D) The model architecture of the optimized neural network. (E) A comparison between the four methods via 100x2 cross validation, indicating the optimized neural network outperforms all the others." />
-<figcaption aria-hidden="true"><span>Figure 1:</span> <strong>Comparison of methods for predicting the proteome from the transcriptome</strong>
+<img src="images/fig1_overview.svg" style="width:100.0%" data-tag="1" alt="Figure 1: Comparison of methods for predicting the proteome from the transcriptome. (A) CPTAC cancer datasets were downloaded from the web and processed to match samples across omic layers. (B) Four primary methods were evaluated for predicting the proteome from the transcriptome. They are a dummy regressor to serve as a benchmark, a random forest regressor, a manually designed neural network, and an optimized neural network chosen via NAS. (C) The primary outline of the NAS search space used to identify the optimized neural network. (D) The model architecture of the optimized neural network. (E) A comparison between the four methods via 100x2 cross validation, indicating the optimized neural network outperforms all the others." />
+<figcaption aria-hidden="true"><span>Figure 1:</span> <strong>Comparison of methods for predicting the proteome from the transcriptome.</strong>
 (A) CPTAC cancer datasets were downloaded from the web and processed to match samples across omic layers.
 (B) Four primary methods were evaluated for predicting the proteome from the transcriptome.
 They are a dummy regressor to serve as a benchmark, a random forest regressor, a manually designed neural network, and an optimized neural network chosen via NAS.
 (C) The primary outline of the NAS search space used to identify the optimized neural network.
 (D) The model architecture of the optimized neural network.
 (E) A comparison between the four methods via 100x2 cross validation, indicating the optimized neural network outperforms all the others.</figcaption>
+</figure>
+</div>
+<h3 id="model-performance-and-correlation-analysis">Model Performance and Correlation Analysis</h3>
+<p>Given that the proteome and transcriptome do not reliably correlate with each other, a correlation between predicted protein quantities and actual protein quantities was calculated.
+An example of the RNA/protein correlation for BGN is shown in Figure 2A, while the true versus neural network-predicted value of the protein is shown in Figure 2B.
+R2 scores were calculated between transcripts and proteins, as well as predicted proteins to actual proteins, and compared to the benchmark transcript-to-protein correlation.
+These analyses revealed that the predictions from the model greatly improved the prediction for this example protein.
+Additionally, it was assessed whether a simple linear model could sufficiently correlate predicted proteins with actual proteins.
+The results revealed that the optimal NAS model outperformed both the direct and linear evaluations, highlighting its effectiveness in predicting protein quantities from transcriptome data.
+A global view of the R2 score distributions for each of the three relationships across all 7822 genes showed that our neural network from NAS performed best [Figure 2C].</p>
+<p>Inspection of the optimal NAS model’s architecture identified key components, including a single-layer block, a three-layer block with a residual connection, and a final single-layer block with a tanh activation function [Figure 1D].
+Notably, the mRNA residual connection played a crucial role in the model’s accuracy.
+To quantify the impact of each component, individual components were selectively removed or nullified to determine their impact on the output, revealing that the mRNA residual connection had the most dramatic effect on the model’s performance [Figure 2D].</p>
+<div id="fig:nas_eval" class="fignos">
+<figure>
+<img src="images/fig2_nas_eval.svg" style="width:100.0%" data-tag="2" alt="Figure 2: Evaluation of the impact and design of the NAS-optimized neural network. (A) Comparison of the normalized transcripts quantities against the matching normalized protein quantities of the validation dataset for the BGN gene. Note that the values have a negative R2 score, indicating little to no correlation. (B) Comparison of the normalized predicted output quantities against the matching true normalized protein quantities of the validation dataset for the BGN gene. Note the change in R2 score, indicating strong correlation. (C) Validation set R2 scores for every protein evaluated by the model. The different bar colors indicate which dataset the true protein quantities were compared to, specifically matching mRNA quantities (blue), the output of a simple linear regression mapping (orange), and the output of the NAS-optimized neural network (green). (D) An evaluation of the different unique components of the NAS-optimized neural network. Corresponding to the search space summary, the categories map to (1) removal of the first block, (2) removal of the second block, (3) removal of the residual connection in the second block, (4) changing the dropout rate of the third block, 0.9, to match that of the first block, 0.52, (5) removing the residual connection from the input to the immediately before the output layer, (6) the unchanged optimized model, and (7) using a sigmoid activation function for the third block instead of the NAS-determined tanh activation function." />
+<figcaption aria-hidden="true"><span>Figure 2:</span> <strong>Evaluation of the impact and design of the NAS-optimized neural network.</strong>
+(A) Comparison of the normalized transcripts quantities against the matching normalized protein quantities of the validation dataset for the BGN gene.
+Note that the values have a negative R2 score, indicating little to no correlation.
+(B) Comparison of the normalized predicted output quantities against the matching true normalized protein quantities of the validation dataset for the BGN gene.
+Note the change in R2 score, indicating strong correlation.
+(C) Validation set R2 scores for every protein evaluated by the model.
+The different bar colors indicate which dataset the true protein quantities were compared to, specifically matching mRNA quantities (blue), the output of a simple linear regression mapping (orange), and the output of the NAS-optimized neural network (green).
+(D) An evaluation of the different unique components of the NAS-optimized neural network.
+Corresponding to the search space summary, the categories map to
+(1) removal of the first block,
+(2) removal of the second block,
+(3) removal of the residual connection in the second block,
+(4) changing the dropout rate of the third block, 0.9, to match that of the first block, 0.52,
+(5) removing the residual connection from the input to the immediately before the output layer,
+(6) the unchanged optimized model, and (7) using a sigmoid activation function for the third block instead of the NAS-determined tanh activation function.</figcaption>
+</figure>
+</div>
+<h3 id="biological-feature-analysis-and-model-improvement">Biological Feature Analysis and Model Improvement</h3>
+<p>To uncover biological features underlying the transcriptome-proteome relationship, a Shapley Additive Explanation (SHAP)<span class="citation" data-cites="1DxcNZqTn">[<a href="#ref-1DxcNZqTn" role="doc-biblioref">24</a>]</span> analysis was performed to identify key transcripts correlated with protein quantities.
+The results showed that mRNA transcripts emphasized by the mRNA residual connection had distinctly higher average absolute SHAP values, highlighting the importance of this connection.
+Furthermore, a clear distinction was observed between transcripts correlated with protein quantity and those that were not, with the former exhibiting higher SHAP values.
+These transcripts were categorized as direct, correlated, and uncorrelated, respectively [Figure 3, Supplementary Figure 3].</p>
+<div id="fig:kde" class="fignos">
+<figure>
+<img src="images/fig3_kde.svg" style="width:100.0%" data-tag="3" alt="Figure 3: Model interpretation evaluating transcript impact on specific protein predictions. SHAP analysis was performed for several of the most well-predicted proteins using all samples in the dataset. As a correlative benchmark, the spearman coefficient between each transcript quantity and the specific protein quantity was also determined. A spearman coefficient of 0 indicates no correlation while negative or positive values indicate negative or positive correlation, respectively. A kernel density graph (KDE) was plotted for mean absolute SHAP (y axis) versus spearman coefficient (x axis) for each transcript’s relation to (A) MCM6, (B) VCL, and (C) FERMT2 proteins specifically. Three general patterns of transcripts appeared, namely a high-impact group, a semi-correlated mid-impact group, and an uncorrelated low-impact group." />
+<figcaption aria-hidden="true"><span>Figure 3:</span> <strong>Model interpretation evaluating transcript impact on specific protein predictions.</strong>
+SHAP analysis was performed for several of the most well-predicted proteins using all samples in the dataset.
+As a correlative benchmark, the spearman coefficient between each transcript quantity and the specific protein quantity was also determined.
+A spearman coefficient of 0 indicates no correlation while negative or positive values indicate negative or positive correlation, respectively.
+A kernel density graph (KDE) was plotted for mean absolute SHAP (y axis) versus spearman coefficient (x axis) for each transcript’s relation to (A) MCM6, (B) VCL, and (C) FERMT2 proteins specifically.
+Three general patterns of transcripts appeared, namely a high-impact group, a semi-correlated mid-impact group, and an uncorrelated low-impact group.</figcaption>
+</figure>
+</div>
+<p>Direct and correlated transcripts might serve similar roles in predictive performance and the residual connection using direct transcripts may bias their importance according to SHAP.
+Instead, incorporating correlated transcripts into the residual connection could enhance the model or alter their importance.
+To test this, the input residual connection was manually configured to allow for differential insertion of each transcript category.
+The results showed that insertion of each group into the residual connection had a different effect on model performance and their SHAP values;
+while uncorrelated transcripts had a marginal impact on model accuracy, direct and correlated transcripts significantly improved predictive performance.
+Notably, direct transcripts had the largest impact, but correlated transcripts also demonstrated a substantial effect, suggesting a relationship between these transcripts and the predicted proteins [Figure 4].
+It is also notable that groups promoted with a residual connection had a consistent corresponding boost in SHAP values, indicating a relationship between model architecture and interpretability.</p>
+<div id="fig:kde_categorized" class="fignos">
+<figure>
+<img src="images/fig4_kde_categorized.svg" style="width:100.0%" data-tag="4" alt="Figure 4: Evaluation of the input residual connection impact using several different categories of transcripts. Kernel density estimation (KDE) for the MMP14 protein. Differing categories of transcripts were applied as the input residual connection, and the resulting impact on SHAP values between each category was plotted. The training loss for each model is included as a benchmark, with red text indicating high loss values and green text indicating low loss values. (A) Evaluation of the model where the input residual connection was removed entirely. (B) Evaluation of the model where only transcripts that directly matched to target proteins were used in the residual connection. (C) Evaluation of the model where only non-direct transcripts above a log absolute mean SHAP value of -15 were included in the residual connection. (D) Evaluation of the model where only non-direct transcripts below a log absolute mean SHAP value of -15 were included in the residual connection. Notably, each time a group is used as an input residual connection, the general impact of group members exceeds transcripts outside the group. The direct transcript model ultimately outperforms all others by mean-squared error (MSE) loss metrics." />
+<figcaption aria-hidden="true"><span>Figure 4:</span> <strong>Evaluation of the input residual connection impact using several different categories of transcripts.</strong>
+Kernel density estimation (KDE) for the MMP14 protein.
+Differing categories of transcripts were applied as the input residual connection, and the resulting impact on SHAP values between each category was plotted.
+The training loss for each model is included as a benchmark, with red text indicating high loss values and green text indicating low loss values.
+(A) Evaluation of the model where the input residual connection was removed entirely.
+(B) Evaluation of the model where only transcripts that directly matched to target proteins were used in the residual connection.
+(C) Evaluation of the model where only non-direct transcripts above a log absolute mean SHAP value of -15 were included in the residual connection.
+(D) Evaluation of the model where only non-direct transcripts below a log absolute mean SHAP value of -15 were included in the residual connection.
+Notably, each time a group is used as an input residual connection, the general impact of group members exceeds transcripts outside the group.
+The direct transcript model ultimately outperforms all others by mean-squared error (MSE) loss metrics.</figcaption>
+</figure>
+</div>
+<p>The types of transcripts in each category differed in proportion.
+While the direct transcripts consisted entirely of coding proteins, the correlated and uncorrelated transcripts had different mixtures of various RNA types.
+The correlated transcripts emphasized long non-coding RNAs and indirect protein coding mRNAs, while uncorrelated transcripts emphasized processed pseudogenes, though all three types were found in both groups [Figure 5, Supplementary Table 1].
+Overall, the findings highlight the importance of optimizing neural network architectures and incorporating biologically relevant features, such as mRNA residual connections and correlated transcripts, to improve the prediction of protein quantities from transcriptome data.</p>
+<div id="fig:transcript_function_heatmaps" class="fignos">
+<figure>
+<img src="images/fig5_transcript_function_heatmaps.svg" style="width:100.0%" data-tag="5" alt="Figure 5: Evaluation of the functional composition of experimentally-derived categories of transcripts. Transcript experimental categories are (1) direct transcripts, (2) correlated transcripts, (3) uncorrelated transcripts, and (4) transcripts in the dataset with zero quantity in the analyzed samples. Transcript functional categories are (1) ‘IG_V_gene,’ or immunoglobulin variable chain genes, (2) ‘IG_V_pseudogene,’ or inactivated immunoglobulin genes, (3) ‘TEC,’ or transcripts to be experimentally confirmed, (4) ‘TR_V_gene,’ or T-cell receptor genes, (5) ‘lncRNA,’ or long non-coding RNAs, (6) ‘miRNA,’ or microRNAs, (7) ‘miscRNA,’ or miscellaneous other RNAs, (8) ‘processed_pseudogene,’ or pseudogenes that lack introns, (9) ‘protein_coding,’ or transcripts that contain an open reading frame, (10) ‘rRNA_pseudogene,’ or non-coding ribosomal RNAs predicted to be a pseudogenes by the Ensembl pipeline, (11) ‘snRNA,’ or small nuclear RNAs, (12) ‘snoRNA,’ or small nucleolar RNA, (13) ‘transcribed_processed_pseudogene,’ or pseudogenes that lack introns and have expression indicated by locus-specific transcripts, (14) ‘transcribed_unitary_pseudogene’, or pseudogenes where the presence of locus-specific transcripts indicates expression and there is an active orthologue in another species, (15) ‘transcribed_unprocessed_pseudogene,’ or pseudogenes with introns and have expression indicated by locus-specific transcripts, and (16) ‘unprocessed_pseudogene,’ or pseudogenes with introns. (A) Heatmap of proportions of transcripts across experimental categories. (B) Heatmap of proportions of transcripts across functional categories." />
+<figcaption aria-hidden="true"><span>Figure 5:</span> <strong>Evaluation of the functional composition of experimentally-derived categories of transcripts.</strong>
+Transcript experimental categories are
+(1) direct transcripts,
+(2) correlated transcripts,
+(3) uncorrelated transcripts, and
+(4) transcripts in the dataset with zero quantity in the analyzed samples.
+Transcript functional categories are
+(1) ‘IG_V_gene,’ or immunoglobulin variable chain genes,
+(2) ‘IG_V_pseudogene,’ or inactivated immunoglobulin genes,
+(3) ‘TEC,’ or transcripts to be experimentally confirmed,
+(4) ‘TR_V_gene,’ or T-cell receptor genes,
+(5) ‘lncRNA,’ or long non-coding RNAs,
+(6) ‘miRNA,’ or microRNAs,
+(7) ‘miscRNA,’ or miscellaneous other RNAs,
+(8) ‘processed_pseudogene,’ or pseudogenes that lack introns,
+(9) ‘protein_coding,’ or transcripts that contain an open reading frame,
+(10) ‘rRNA_pseudogene,’ or non-coding ribosomal RNAs predicted to be a pseudogenes by the Ensembl pipeline,
+(11) ‘snRNA,’ or small nuclear RNAs,
+(12) ‘snoRNA,’ or small nucleolar RNA,
+(13) ‘transcribed_processed_pseudogene,’ or pseudogenes that lack introns and have expression indicated by locus-specific transcripts,
+(14) ‘transcribed_unitary_pseudogene’, or pseudogenes where the presence of locus-specific transcripts indicates expression and there is an active orthologue in another species,
+(15) ‘transcribed_unprocessed_pseudogene,’ or pseudogenes with introns and have expression indicated by locus-specific transcripts, and
+(16) ‘unprocessed_pseudogene,’ or pseudogenes with introns.
+(A) Heatmap of proportions of transcripts across experimental categories.
+(B) Heatmap of proportions of transcripts across functional categories.</figcaption>
 </figure>
 </div>
 <h2 class="page_break_before" id="references">References</h2>
