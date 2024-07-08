@@ -1,5 +1,5 @@
 ---
-title: "Manuscript Title"
+title: "Multi-Dataset Integration and Residual Connections Improve Proteome Prediction from Transcriptomics Using Deep Learning"
 date: null  # Defaults to date generated, but can specify like '2022-10-31'.
 keywords:
   - markdown
@@ -7,24 +7,24 @@ keywords:
   - manubot
 lang: en-US
 authors:
-  - github: johndoe
-    name: John Doe
-    initials: JD
-    orcid: XXXX-XXXX-XXXX-XXXX
-    twitter: johndoe
-    mastodon: johndoe
-    mastodon-server: mastodon.social
-    email: john.doe@something.com
+
+  - github: CCranney
+    name: Caleb W. Cranney
+    initials: CWC
+    orcid: 0000-0001-8482-758X
+    twitter: CalebCranney
+    email: caleb.cranney.app@gmail.com
     affiliations:
-      - Department of Something, University of Whatever
+      - Department of Computational Biomedicine, Cedars Sinai Medical Center
     funders:
-      - Grant XXXXXXXX
-  - github: janeroe
-    name: Jane Roe
-    initials: JR
-    orcid: XXXX-XXXX-XXXX-XXXX
-    email: jane.roe@whatever.edu
+      - Grant R35GM142502, National Institute of General Medical Sciences (NIGMS)
+
+  - github: jessegmeyerlab
+    name: Jesse G. Meyer
+    initials: JGM
+    orcid: 0000-0003-2753-3926
+    twitter: j_my_sci
+    email: jessegmeyer@gmail.com
     affiliations:
-      - Department of Something, University of Whatever
-      - Department of Whatever, University of Something
-    corresponding: true
+      - Department of Computational Biomedicine, Cedars Sinai Medical Center
+
