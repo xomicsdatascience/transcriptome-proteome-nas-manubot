@@ -23,8 +23,8 @@ header-includes: |
   <meta name="dc.date" content="2024-07-08" />
   <meta name="citation_publication_date" content="2024-07-08" />
   <meta property="article:published_time" content="2024-07-08" />
-  <meta name="dc.modified" content="2024-07-08T20:04:16+00:00" />
-  <meta property="article:modified_time" content="2024-07-08T20:04:16+00:00" />
+  <meta name="dc.modified" content="2024-07-08T20:35:34+00:00" />
+  <meta property="article:modified_time" content="2024-07-08T20:35:34+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -45,9 +45,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/" />
   <meta name="citation_pdf_url" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/1978a6834e24963b7eb8b19e0126769ef097f4ae/" />
-  <meta name="manubot_html_url_versioned" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/1978a6834e24963b7eb8b19e0126769ef097f4ae/" />
-  <meta name="manubot_pdf_url_versioned" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/1978a6834e24963b7eb8b19e0126769ef097f4ae/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/00cce624746b50d2df908e8cf8962b29cba92694/" />
+  <meta name="manubot_html_url_versioned" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/00cce624746b50d2df908e8cf8962b29cba92694/" />
+  <meta name="manubot_pdf_url_versioned" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/00cce624746b50d2df908e8cf8962b29cba92694/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,9 +69,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/1978a6834e24963b7eb8b19e0126769ef097f4ae/))
+([permalink](https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/00cce624746b50d2df908e8cf8962b29cba92694/))
 was automatically generated
-from [xomicsdatascience/transcriptome-proteome-nas-manubot@1978a68](https://github.com/xomicsdatascience/transcriptome-proteome-nas-manubot/tree/1978a6834e24963b7eb8b19e0126769ef097f4ae)
+from [xomicsdatascience/transcriptome-proteome-nas-manubot@00cce62](https://github.com/xomicsdatascience/transcriptome-proteome-nas-manubot/tree/00cce624746b50d2df908e8cf8962b29cba92694)
 on July 8, 2024.
 </em></small>
 
@@ -138,10 +138,10 @@ Recent works have even found that the most predictive transcripts of a protein i
 While predicting protein quantity through direct transcript-to-protein correlation remains elusive, using contextual transcript information may reveal more complex proteomic-transcriptomic relationships that could be leveraged to predict one from the other. 
 Moreover, predicting proteins from transcripts could reduce the time and financial costs associated with future studies, as transcript quantification is generally easier to accomplish than protein quantification [@DOI:10.1038/s41467-020-16937-8]. 
 
-The National Cancer Institute's (NCI) Clinical Proteomic Tumor Analysis Consortium ([CPTAC](https://proteomics.cancer.gov/programs/cptac)) provides a valuable resource for exploring this issue, offering multi-omic datasets that enable research into healthy and cancerous disease states. 
+The National Cancer Institute's (NCI) Clinical Proteomic Tumor Analysis Consortium (CPTAC) provides a valuable resource for exploring this issue, offering multi-omic datasets that enable research into healthy and cancerous disease states [@url:https://proteomics.cancer.gov/programs/cptac]. 
 Specifically, CPTAC datasets comprise transcriptomic and proteomic data (among others) from various cancer types and adjacent healthy tissue, which makes this data useful for detection of inter-omic relationships. 
 Several research collaborations have occurred to use this data to study RNA-protein relationships. 
-The 2017 [NCI-CPTAC DREAM Proteogenomics challenge](https://dreamchallenges.org/nci-cptac-dream-proteogenomics/), a sub challenge of which aimed to predict protein quantities from transcript abundance, is a notable example. 
+The 2017 NCI-CPTAC DREAM Proteogenomics challenge [@url:https://dreamchallenges.org/nci-cptac-dream-proteogenomics/], a sub challenge of which aimed to predict protein quantities from transcript abundance, is a notable example. 
 Contestants used a variety of methods, including random forest regression, genetic models, spline regression, linear regression, and elastic net methods, as well as ensemble combinations [@DOI:10.1186/s12859-019-3253-z]. 
 Using a test set only from breast cancer and ovarian cancer, the winning model achieved a pearson correlation of 0.41 and 0.47 between the true and predicted protein quantities, respectively [@DOI:10.1186/s12915-019-0730-9]. 
 Notably, deep learning neural networks were not strongly represented in the challenge results. 
@@ -179,6 +179,62 @@ In a standard data partition, each dataset had a split of 0.8, 0.1 and 0.1 for t
 
 The final dataset contained data for breast cancer (BRCA), kidney cancer (CCRCC), colon cancer (COAD), brain cancer (GBM), squamous cell cancer (HNSCC), lung cancer (LSCC and LUAD), ovarian cancer (OV), and pancreatic cancer (PDAC) as well as adjacent healthy tissue. 
 59286 transcripts and 7822 proteins were shared across all datasets with a combined number of 1256 samples.  
+
+### NAS
+
+The search space used in this study chose a model architecture consisting of three segments, or blocks, of sub-architectures. 
+These blocks could vary in number of neurons, number of layers, activation functions between layers, intra-block residual connections, dropout rates, or be removed entirely to simplify the network. 
+It was determined that while mRNA to encoded protein quantities are not directly correlated, the quantity of one likely has a strong impact on the quantity of the other. 
+Thus, the search space also included a residual connection inserting mRNA input quantities for proteins being predicted right before the final output layer of the network. 
+
+The NAS workflow was based on the “Multi-Objective NAS with Ax” workflow tutorial on the official pytorch website [@url:https://pytorch.org/tutorials/intermediate/ax_multiobjective_nas_tutorial.html], utilizing Meta’s Ax package to do so. 
+The process includes designing a search space as a separate python script that accepts variables that dictate the model structure, setting up a torchx runner and scheduler for submitting model training scripts concurrently, and defining optimization requirement configurations. 
+Ax uses Bayesian optimization to evaluate and compare model configurations and their predictive accuracy, highlighting the impact specific architecture decisions have on the final loss. 
+
+### Model Evaluation and Comparison 
+
+Losses between predicted and true outputs were calculated using mean-squared error. 
+The dummy regressor identified the mean of the true output data and used it as the prediction of all data points. 
+The random forest regressor was run with log2 max feature and 50 node max depth limitations, as the number of inputs and outputs in creating a forest of full trees would otherwise require upwards of years to calculate. 
+The manually designed model consisted of two hidden layers with output sizes of 12k, and 10k, respectively. 
+Hidden layers employed batch normalization, a dropout rate of 0.6, and used the leaky ReLU activation function with a negative slope of 0.05 [Supplementary Figure 2]. 
+The NAS-optimized model consisted of three blocks of layers, followed by a single output layer. 
+The first block consisted of a single neural layer with 319 neurons, a sigmoid activation function, a dropout rate of 0.52. 
+The second block consisted of three neural layers with 508 neurons, a sigmoid activation function, a dropout rate of 0.69, and a residual connection skipping the middle layer. 
+The third block consisted of a single neural layer with 7822 neurons (the output size), a tanh activation function, and a dropout rate of 0.9. 
+The optimal model also sported a batch size of 128 and a learning rate of 1e-4. 
+
+### Model Interpretation Using SHAP Values 
+
+SHAP values [@url:http://papers.nips.cc/paper/7062-a-unified-approach-to-interpreting-model-predictions.pdf] were calculated using all available samples from CPTAC used in training and validation of the optimal model, which included the direct transcript residual connection. 
+SHAP values for the top 13 accurately predicted proteins across cancers using the NAS optimized model were extracted and graphed independently, specifically CAVIN1, FERMT2, FLNA, HCLS1, TK3, MCM3, MCM4, MCM6, P4HB, PTPN6, SMC2, STAT1, and VCL. 
+MMP14 was included as a candidate because of its role in cancer regulation. 
+SHAP values for targeted proteins were extracted and analyzed independently of the raw SHAP outputs for memory efficiency purposes. 
+
+Direct transcripts were determined by directly matching gene names to the list of predicted proteins. 
+A cutoff of -15 mean absolute SHAP value was chosen to separate correlated and uncorrelated transcripts. 
+Transcripts that had an absolute mean SHAP value above -15 in at least 70% of the chosen proteins were determined to belong to the correlated category. 
+Transcripts that had a null or 0 SHAP value were excluded from categorization. 
+
+A SHAP analysis was also run on 3 variations of the optimal model, specifically models with no input residual connection, a correlated transcript residual connection, and an uncorrelated transcript residual connection. 
+To accommodate residual connections of varying lengths, the output size of the third block and the input size of the final output layer were altered to match the size of the residual connection for these adjustments. 
+
+### Code Availability
+
+CPTAC data was downloaded using the cptac python package [@DOI:10.1021/acs.jproteome.0c00919]. 
+All models were developed using Pytorch [@DOI:10.1145/3620665.3640366] and Pytorch Lightning [@url:https://github.com/Lightning-AI/pytorch-lightning]. 
+NAS was implemented with Meta’s Adaptive Experimentation Platform (Ax) [@url:https://github.com/facebook/Ax]. 
+NAS evaluation metrics were tracked with tensorboardX [@url:https://github.com/lanpa/tensorboardX]. 
+Scikit-learn was used to perform train-validation splits and several non-neural net regression models [@url:http://jmlr.org/papers/v12/pedregosa11a.html]. 
+Pandas was used to load, process and save CPTAC data [@DOI:10.5281/zenodo.3509134]. Numpy was used to perform various calculations [@DOI:10.1038/s41586-020-2649-2]. 
+SHAP was performed with the shap python package [@url:http://papers.nips.cc/paper/7062-a-unified-approach-to-interpreting-model-predictions.pdf]. 
+
+Code for data processing and model training and evaluation can be found at [https://github.com/xomicsdatascience/RnaToProteinDataModule]. 
+Classes for data processing and model generation can be found in the src directory, while scripts for running the different experiments can be found in the scripts directory. 
+
+### Large Language Model Edit
+
+This paper was refined for human readability using Meta’s Llama 3 Large Language Model [@url:https://ai.meta.com/blog/meta-llama-3/]. 
 
 ## References {.page_break_before}
 
