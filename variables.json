@@ -1,0 +1,97 @@
+{
+  "pandoc": {
+    "title": "Manuscript Title",
+    "keywords": [
+      "markdown",
+      "publishing",
+      "manubot"
+    ],
+    "lang": "en-US",
+    "date-meta": "2024-07-08",
+    "author-meta": [
+      "John Doe",
+      "Jane Roe"
+    ],
+    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta name=\"dc.title\" content=\"Manuscript Title\" />\n<meta name=\"citation_title\" content=\"Manuscript Title\" />\n<meta property=\"og:title\" content=\"Manuscript Title\" />\n<meta property=\"twitter:title\" content=\"Manuscript Title\" />\n<meta name=\"dc.date\" content=\"2024-07-08\" />\n<meta name=\"citation_publication_date\" content=\"2024-07-08\" />\n<meta property=\"article:published_time\" content=\"2024-07-08\" />\n<meta name=\"dc.modified\" content=\"2024-07-08T16:55:18+00:00\" />\n<meta property=\"article:modified_time\" content=\"2024-07-08T16:55:18+00:00\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"John Doe\" />\n<meta name=\"citation_author_institution\" content=\"Department of Something, University of Whatever\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<meta name=\"twitter:creator\" content=\"@johndoe\" />\n<meta name=\"citation_author\" content=\"Jane Roe\" />\n<meta name=\"citation_author_institution\" content=\"Department of Something, University of Whatever\" />\n<meta name=\"citation_author_institution\" content=\"Department of Whatever, University of Something\" />\n<meta name=\"citation_author_orcid\" content=\"XXXX-XXXX-XXXX-XXXX\" />\n<link rel=\"canonical\" href=\"https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/\" />\n<meta property=\"og:url\" content=\"https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/\" />\n<meta property=\"twitter:url\" content=\"https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/\" />\n<meta name=\"citation_pdf_url\" content=\"https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/f92ea1b72211d2543bac7276995d1b69947c6949/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/f92ea1b72211d2543bac7276995d1b69947c6949/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/f92ea1b72211d2543bac7276995d1b69947c6949/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->\n",
+    "bibliography": [
+      "content/manual-references.json"
+    ],
+    "manubot-output-bibliography": "output/references.json",
+    "manubot-output-citekeys": "output/citations.tsv",
+    "manubot-requests-cache-path": "ci/cache/requests-cache",
+    "manubot-clear-requests-cache": false
+  },
+  "manubot": {
+    "date": "2024-07-08",
+    "date_long": "July 8, 2024",
+    "generated": "2024-07-08T16:55:18+00:00",
+    "generated_date_long": "July 8, 2024",
+    "randomize_author_order": false,
+    "authors": [
+      {
+        "github": "johndoe",
+        "name": "John Doe",
+        "initials": "JD",
+        "orcid": "XXXX-XXXX-XXXX-XXXX",
+        "twitter": "johndoe",
+        "mastodon": "johndoe",
+        "mastodon-server": "mastodon.social",
+        "email": "john.doe@something.com",
+        "affiliations": [
+          "Department of Something, University of Whatever"
+        ],
+        "funders": [
+          "Grant XXXXXXXX"
+        ],
+        "affiliation_numbers": [
+          1
+        ]
+      },
+      {
+        "github": "janeroe",
+        "name": "Jane Roe",
+        "initials": "JR",
+        "orcid": "XXXX-XXXX-XXXX-XXXX",
+        "email": "jane.roe@whatever.edu",
+        "affiliations": [
+          "Department of Something, University of Whatever",
+          "Department of Whatever, University of Something"
+        ],
+        "corresponding": true,
+        "affiliation_numbers": [
+          1,
+          2
+        ]
+      }
+    ],
+    "affiliations": [
+      {
+        "affiliation": "Department of Something, University of Whatever",
+        "affiliation_number": 1
+      },
+      {
+        "affiliation": "Department of Whatever, University of Something",
+        "affiliation_number": 2
+      }
+    ],
+    "ci_source": {
+      "provider": "github",
+      "repo_slug": "xomicsdatascience/transcriptome-proteome-nas-manubot",
+      "repo_owner": "xomicsdatascience",
+      "repo_name": "transcriptome-proteome-nas-manubot",
+      "commit": "f92ea1b72211d2543bac7276995d1b69947c6949",
+      "triggering_commit": "f92ea1b72211d2543bac7276995d1b69947c6949",
+      "build_url": "https://github.com/xomicsdatascience/transcriptome-proteome-nas-manubot/commit/f92ea1b72211d2543bac7276995d1b69947c6949/checks",
+      "job_url": "https://github.com/xomicsdatascience/transcriptome-proteome-nas-manubot/actions/runs/9843730085"
+    },
+    "html_url": "https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/",
+    "pdf_url": "https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/manuscript.pdf",
+    "html_url_versioned": "https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/f92ea1b72211d2543bac7276995d1b69947c6949/",
+    "pdf_url_versioned": "https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/f92ea1b72211d2543bac7276995d1b69947c6949/manuscript.pdf",
+    "manubot_version": "0.5.6",
+    "rootstock_commit": "f92ea1b72211d2543bac7276995d1b69947c6949",
+    "manuscript_stats": {
+      "word_count": 1581
+    }
+  }
+}
