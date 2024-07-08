@@ -17,8 +17,8 @@ NLP
 omic
 Proteogenomics
 proteome
-proteomes
-Proteomic
+Proteomes
+proteomic
 Proteomics
 SHAP
 transcriptomes

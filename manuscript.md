@@ -23,8 +23,8 @@ header-includes: |
   <meta name="dc.date" content="2024-07-08" />
   <meta name="citation_publication_date" content="2024-07-08" />
   <meta property="article:published_time" content="2024-07-08" />
-  <meta name="dc.modified" content="2024-07-08T19:12:00+00:00" />
-  <meta property="article:modified_time" content="2024-07-08T19:12:00+00:00" />
+  <meta name="dc.modified" content="2024-07-08T19:38:10+00:00" />
+  <meta property="article:modified_time" content="2024-07-08T19:38:10+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -45,9 +45,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/" />
   <meta name="citation_pdf_url" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/5d989ce72f1cb85b64a5a6a3dec293a33f6818c4/" />
-  <meta name="manubot_html_url_versioned" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/5d989ce72f1cb85b64a5a6a3dec293a33f6818c4/" />
-  <meta name="manubot_pdf_url_versioned" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/5d989ce72f1cb85b64a5a6a3dec293a33f6818c4/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/c0d248d165b712f4f177f7a586a4dbe789d349af/" />
+  <meta name="manubot_html_url_versioned" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/c0d248d165b712f4f177f7a586a4dbe789d349af/" />
+  <meta name="manubot_pdf_url_versioned" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/c0d248d165b712f4f177f7a586a4dbe789d349af/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,9 +69,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/5d989ce72f1cb85b64a5a6a3dec293a33f6818c4/))
+([permalink](https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/c0d248d165b712f4f177f7a586a4dbe789d349af/))
 was automatically generated
-from [xomicsdatascience/transcriptome-proteome-nas-manubot@5d989ce](https://github.com/xomicsdatascience/transcriptome-proteome-nas-manubot/tree/5d989ce72f1cb85b64a5a6a3dec293a33f6818c4)
+from [xomicsdatascience/transcriptome-proteome-nas-manubot@c0d248d](https://github.com/xomicsdatascience/transcriptome-proteome-nas-manubot/tree/c0d248d165b712f4f177f7a586a4dbe789d349af)
 on July 8, 2024.
 </em></small>
 
@@ -132,29 +132,29 @@ Elucidating these relationships is crucial for understanding biological systems 
 By disentangling these interactions, researchers can identify markers and patterns specific to complex diseases, ultimately enabling the development of targeted treatments. 
 
 Among the multi-omic data type relationships, the connection between transcripts and their corresponding proteins is particularly enigmatic. 
-Despite being quantifiable and having a direct derivative relationship, their relative quantities often exhibit only weak correlations [1], [2]. 
-Research has identified several possible causes for this discrepancy, including alternate rates of protein generation and decay [3], [4], [5], varying reactions to environmental stimuli [6], [7], or simply systematic experimentation error bias [8], [9]. 
-Recent works have even found that the most predictive transcripts of a protein include those that are involved in protein-protein interactions [10]. 
+Despite being quantifiable and having a direct derivative relationship, their relative quantities often exhibit only weak correlations [@DOI:10.1128/mcb.19.3.1720], [@DOI:10.1016/j.tibs.2014.10.010]. 
+Research has identified several possible causes for this discrepancy, including alternate rates of protein generation and decay [@DOI:10.1038/nrg3185], [@DOI:10.1093/dnares/dsn030], [@DOI:10.1126/science.1160489], varying reactions to environmental stimuli [@DOI:10.1016/j.cell.2016.03.014], [@DOI:10.1128/ec.01.1.22-32.2002], or simply systematic experimentation error bias [@DOI:10.1016/j.crmeth.2022.100288], [@DOI:10.26508/lsa.202201885]. 
+Recent works have even found that the most predictive transcripts of a protein include those that are involved in protein-protein interactions [@DOI:10.1371/journal.pcbi.1010702]. 
 While predicting protein quantity through direct transcript-to-protein correlation remains elusive, using contextual transcript information may reveal more complex proteomic-transcriptomic relationships that could be leveraged to predict one from the other. 
-Moreover, predicting proteins from transcripts could reduce the time and financial costs associated with future studies, as transcript quantification is generally easier to accomplish than protein quantification [11]. 
+Moreover, predicting proteins from transcripts could reduce the time and financial costs associated with future studies, as transcript quantification is generally easier to accomplish than protein quantification [@DOI:10.1038/s41467-020-16937-8]. 
 
-The National Cancer Institute's (NCI) Clinical Proteomic Tumor Analysis Consortium (CPTAC) provides a valuable resource for exploring this issue, offering multi-omic datasets that enable research into healthy and cancerous disease states [12]. 
+The National Cancer Institute's (NCI) Clinical Proteomic Tumor Analysis Consortium ([CPTAC](https://proteomics.cancer.gov/programs/cptac)) provides a valuable resource for exploring this issue, offering multi-omic datasets that enable research into healthy and cancerous disease states. 
 Specifically, CPTAC datasets comprise transcriptomic and proteomic data (among others) from various cancer types and adjacent healthy tissue, which makes this data useful for detection of inter-omic relationships. 
 Several research collaborations have occurred to use this data to study RNA-protein relationships. 
-The 2017 NCI-CPTAC DREAM Proteogenomics challenge, a sub challenge of which aimed to predict protein quantities from transcript abundance, is a notable example [13]. 
-Contestants used a variety of methods, including random forest regression, genetic models, spline regression, linear regression, and elastic net methods, as well as ensemble combinations [14]. 
-Using a test set only from breast cancer and ovarian cancer, the winning model achieved a pearson correlation of 0.41 and 0.47 between the true and predicted protein quantities, respectively [15]. 
+The 2017 [NCI-CPTAC DREAM Proteogenomics challenge](https://dreamchallenges.org/nci-cptac-dream-proteogenomics/), a sub challenge of which aimed to predict protein quantities from transcript abundance, is a notable example. 
+Contestants used a variety of methods, including random forest regression, genetic models, spline regression, linear regression, and elastic net methods, as well as ensemble combinations [@DOI:10.1186/s12859-019-3253-z]. 
+Using a test set only from breast cancer and ovarian cancer, the winning model achieved a pearson correlation of 0.41 and 0.47 between the true and predicted protein quantities, respectively [@DOI:10.1186/s12915-019-0730-9]. 
 Notably, deep learning neural networks were not strongly represented in the challenge results. 
 
 Since the close of the challenge, research into deep learning has expanded significantly, with a focus on replicating human behaviors like computer vision and natural language processing (NLP). 
-However, the underlying principles of deep learning are equally applicable to biological data [16], [17], [18]. 
+However, the underlying principles of deep learning are equally applicable to biological data [@DOI:10.1038/s42256-020-0217-y], [@DOI:10.1093/bib/bbw068], [@DOI:10.2174/1574893615999200711165743]. 
 The key challenge lies in developing a model architecture that best fits a given problem. 
-One underutilized strategy for deep learning model design is the NAS [19]. 
+One underutilized strategy for deep learning model design is the NAS [@DOI:10.1145/3447582]. 
 NAS serves a function like hyperparameter tuning, in that a range of values for specific hyperparameters are evaluated to obtain the optimal configurations. 
 In the case of NAS, the concept is expanded to include model architecture in addition to hyperparameters, designing optimal and unique model architectures in an automated fashion. 
-While NAS has been applied to genomic data [20], its application to predicting proteomic data from transcriptomic data remains unexplored. 
+While NAS has been applied to genomic data [@DOI:10.1038/s42256-021-00316-z], its application to predicting proteomic data from transcriptomic data remains unexplored. 
 
-We previously showed how machine learning can accurately predict the metabolome from the proteome, and how model interpretation revealed important biological insights [21]. 
+We previously showed how machine learning can accurately predict the metabolome from the proteome, and how model interpretation revealed important biological insights [@DOI:10.1093/bioinformatics/btac631]. 
 Here, we extend that work to transcript-to-protein deep learning prediction models and demonstrate that utilizing NAS improved the accuracy. 
 Furthermore, we highlight the potential of model interpretation to identify patterns in transcript-protein relations that underpin biological processes characteristic of a disease state.	 
 
