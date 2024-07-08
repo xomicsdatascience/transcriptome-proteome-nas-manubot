@@ -1,6 +1,8 @@
 accuracies
+Alexandre
 benchmarked
 BGN
+biomarkers
 Biomedicine
 BRCA
 CalebCranney
@@ -8,8 +10,9 @@ CAVIN
 CCranney
 CCRCC
 COAD
-CPTAC
+cptac
 Cranney
+Dasom
 dataset
 datasets
 Ensembl
@@ -21,9 +24,11 @@ HB
 HCLS
 Heatmap
 HNSCC
+Hwang
 hyperparameter
 hyperparameters
 IG
+impactful
 interpretability
 intra
 introns
@@ -53,11 +58,12 @@ omic
 orthologue
 OV
 PDAC
+pre
 Preprocessing
 Proteogenomics
 proteome
 Proteomes
-Proteomic
+proteomic
 Proteomics
 pseudogene
 pseudogenes
@@ -77,6 +83,7 @@ SMC
 snoRNA
 snRNA
 spearman
+spliceosome
 src
 tanh
 TEC
@@ -87,5 +94,8 @@ transcriptome
 transcriptomes
 transcriptomic
 transcriptomics
+unimpactful
 VCL
 zenodo
+Zhang
+Zijun

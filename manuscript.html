@@ -54,8 +54,8 @@
   <meta name="dc.date" content="2024-07-08" />
   <meta name="citation_publication_date" content="2024-07-08" />
   <meta property="article:published_time" content="2024-07-08" />
-  <meta name="dc.modified" content="2024-07-08T21:40:43+00:00" />
-  <meta property="article:modified_time" content="2024-07-08T21:40:43+00:00" />
+  <meta name="dc.modified" content="2024-07-08T21:53:52+00:00" />
+  <meta property="article:modified_time" content="2024-07-08T21:53:52+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -76,9 +76,9 @@
   <meta name="citation_fulltext_html_url" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/" />
   <meta name="citation_pdf_url" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/7f0dd5d69740dec5e45ada5be83576053717ad86/" />
-  <meta name="manubot_html_url_versioned" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/7f0dd5d69740dec5e45ada5be83576053717ad86/" />
-  <meta name="manubot_pdf_url_versioned" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/7f0dd5d69740dec5e45ada5be83576053717ad86/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/f25e39537503286b1db5487b425e9807700661dc/" />
+  <meta name="manubot_html_url_versioned" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/f25e39537503286b1db5487b425e9807700661dc/" />
+  <meta name="manubot_pdf_url_versioned" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/f25e39537503286b1db5487b425e9807700661dc/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -95,9 +95,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/7f0dd5d69740dec5e45ada5be83576053717ad86/">permalink</a>)
+(<a href="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/f25e39537503286b1db5487b425e9807700661dc/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/xomicsdatascience/transcriptome-proteome-nas-manubot/tree/7f0dd5d69740dec5e45ada5be83576053717ad86">xomicsdatascience/transcriptome-proteome-nas-manubot@7f0dd5d</a>
+from <a href="https://github.com/xomicsdatascience/transcriptome-proteome-nas-manubot/tree/f25e39537503286b1db5487b425e9807700661dc">xomicsdatascience/transcriptome-proteome-nas-manubot@f25e395</a>
 on July 8, 2024.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -348,6 +348,30 @@ Transcript functional categories are
 (B) Heatmap of proportions of transcripts across functional categories.</figcaption>
 </figure>
 </div>
+<h2 class="page_break_before" id="discussion">Discussion</h2>
+<p>The results of this study demonstrate the potential of NAS in optimizing deep learning models for predicting protein quantities from transcriptome data.
+By automating the selection of optimal neural network architectures, we were able to identify a model that consistently outperformed other approaches, including random forest and linear regression.
+The importance of incorporating biologically relevant features, such as mRNA residual connections and correlated transcripts, was also highlighted.</p>
+<p>The NAS-optimized model’s ability to predict protein quantities from transcriptome data with improved accuracy has significant implications for the field of proteogenomics.
+By leveraging the strengths of deep learning and multi-omic data, we can gain a better understanding of the complex relationships between different omic layers.
+This, in turn, can lead to the identification of novel biomarkers and therapeutic targets for diseases.
+We expect that as larger and larger datasets become available for training;
+the approach we outlined here will improve this prediction further.</p>
+<p>The SHAP analysis revealed several distinct categories of transcripts that had varying degrees of impact on protein quantity prediction.
+These findings suggest that the model can capture biologically meaningful patterns in the data, and that the incorporation of correlated transcripts can enhance predictive performance in future models.
+Although the residual connection clearly biased the group of direct transcripts, Figure 5 suggests that different classes of transcripts have different effects on protein quantities.
+For example, snRNA, which functions in the spliceosome to process pre-RNA, have almost no specific impact on protein quantity prediction and are found in the unimpactful, uncorrelated transcript category.
+Messenger RNAs generally have a high impact on predictive function.
+Long non-coding RNAs seem broadly more impactful for a gene’s quantity, whereas the importance of pseudogenes appears to depend on their state of processing.
+Only a small subset of microRNAs (1%) were important for predicting this set of proteins, supporting their role in specific biological regulation.</p>
+<h2 class="page_break_before" id="conclusion">Conclusion</h2>
+<p>This study demonstrates the potential of NAS and deep learning in optimizing protein quantity predictions from transcriptome data.
+The results highlight the importance of incorporating biologically relevant features and the need for further research into the development of more accurate and efficient models.
+By leveraging the strengths of these approaches, we can gain a better understanding of the complex relationships between different omic layers and make significant progress in the field of proteogenomics.</p>
+<h2 class="page_break_before" id="acknowledgements">Acknowledgements</h2>
+<p>We appreciate advice from Zijun (Frank) Zhang related to NAS and Alexandre Hutton for advice related to deep learning.
+Dasom Hwang helped with graphic design.
+This work was funded by the National Institute of General Medical Sciences (NIGMS) R35GM142502.</p>
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" class="references csl-bib-body" role="doc-bibliography">
