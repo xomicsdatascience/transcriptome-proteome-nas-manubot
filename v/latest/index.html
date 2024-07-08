@@ -54,8 +54,8 @@
   <meta name="dc.date" content="2024-07-08" />
   <meta name="citation_publication_date" content="2024-07-08" />
   <meta property="article:published_time" content="2024-07-08" />
-  <meta name="dc.modified" content="2024-07-08T20:04:16+00:00" />
-  <meta property="article:modified_time" content="2024-07-08T20:04:16+00:00" />
+  <meta name="dc.modified" content="2024-07-08T20:35:34+00:00" />
+  <meta property="article:modified_time" content="2024-07-08T20:35:34+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -76,9 +76,9 @@
   <meta name="citation_fulltext_html_url" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/" />
   <meta name="citation_pdf_url" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/1978a6834e24963b7eb8b19e0126769ef097f4ae/" />
-  <meta name="manubot_html_url_versioned" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/1978a6834e24963b7eb8b19e0126769ef097f4ae/" />
-  <meta name="manubot_pdf_url_versioned" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/1978a6834e24963b7eb8b19e0126769ef097f4ae/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/00cce624746b50d2df908e8cf8962b29cba92694/" />
+  <meta name="manubot_html_url_versioned" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/00cce624746b50d2df908e8cf8962b29cba92694/" />
+  <meta name="manubot_pdf_url_versioned" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/00cce624746b50d2df908e8cf8962b29cba92694/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -95,9 +95,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/1978a6834e24963b7eb8b19e0126769ef097f4ae/">permalink</a>)
+(<a href="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/00cce624746b50d2df908e8cf8962b29cba92694/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/xomicsdatascience/transcriptome-proteome-nas-manubot/tree/1978a6834e24963b7eb8b19e0126769ef097f4ae">xomicsdatascience/transcriptome-proteome-nas-manubot@1978a68</a>
+from <a href="https://github.com/xomicsdatascience/transcriptome-proteome-nas-manubot/tree/00cce624746b50d2df908e8cf8962b29cba92694">xomicsdatascience/transcriptome-proteome-nas-manubot@00cce62</a>
 on July 8, 2024.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -149,21 +149,21 @@ Research has identified several possible causes for this discrepancy, including 
 Recent works have even found that the most predictive transcripts of a protein include those that are involved in protein-protein interactions <span class="citation" data-cites="gZC83S3a">[<a href="#ref-gZC83S3a" role="doc-biblioref">10</a>]</span>.
 While predicting protein quantity through direct transcript-to-protein correlation remains elusive, using contextual transcript information may reveal more complex proteomic-transcriptomic relationships that could be leveraged to predict one from the other.
 Moreover, predicting proteins from transcripts could reduce the time and financial costs associated with future studies, as transcript quantification is generally easier to accomplish than protein quantification <span class="citation" data-cites="uorVZw61">[<a href="#ref-uorVZw61" role="doc-biblioref">11</a>]</span>.</p>
-<p>The National Cancer Institute’s (NCI) Clinical Proteomic Tumor Analysis Consortium (<a href="https://proteomics.cancer.gov/programs/cptac">CPTAC</a>) provides a valuable resource for exploring this issue, offering multi-omic datasets that enable research into healthy and cancerous disease states.
+<p>The National Cancer Institute’s (NCI) Clinical Proteomic Tumor Analysis Consortium (CPTAC) provides a valuable resource for exploring this issue, offering multi-omic datasets that enable research into healthy and cancerous disease states <span class="citation" data-cites="8fPWhXnE">[<a href="#ref-8fPWhXnE" role="doc-biblioref">12</a>]</span>.
 Specifically, CPTAC datasets comprise transcriptomic and proteomic data (among others) from various cancer types and adjacent healthy tissue, which makes this data useful for detection of inter-omic relationships.
 Several research collaborations have occurred to use this data to study RNA-protein relationships.
-The 2017 <a href="https://dreamchallenges.org/nci-cptac-dream-proteogenomics/">NCI-CPTAC DREAM Proteogenomics challenge</a>, a sub challenge of which aimed to predict protein quantities from transcript abundance, is a notable example.
-Contestants used a variety of methods, including random forest regression, genetic models, spline regression, linear regression, and elastic net methods, as well as ensemble combinations <span class="citation" data-cites="QZpIgf3V">[<a href="#ref-QZpIgf3V" role="doc-biblioref">12</a>]</span>.
-Using a test set only from breast cancer and ovarian cancer, the winning model achieved a pearson correlation of 0.41 and 0.47 between the true and predicted protein quantities, respectively <span class="citation" data-cites="DapLzepO">[<a href="#ref-DapLzepO" role="doc-biblioref">13</a>]</span>.
+The 2017 NCI-CPTAC DREAM Proteogenomics challenge <span class="citation" data-cites="GkTRlKPC">[<a href="#ref-GkTRlKPC" role="doc-biblioref">13</a>/]</span>, a sub challenge of which aimed to predict protein quantities from transcript abundance, is a notable example.
+Contestants used a variety of methods, including random forest regression, genetic models, spline regression, linear regression, and elastic net methods, as well as ensemble combinations <span class="citation" data-cites="QZpIgf3V">[<a href="#ref-QZpIgf3V" role="doc-biblioref">14</a>]</span>.
+Using a test set only from breast cancer and ovarian cancer, the winning model achieved a pearson correlation of 0.41 and 0.47 between the true and predicted protein quantities, respectively <span class="citation" data-cites="DapLzepO">[<a href="#ref-DapLzepO" role="doc-biblioref">15</a>]</span>.
 Notably, deep learning neural networks were not strongly represented in the challenge results.</p>
 <p>Since the close of the challenge, research into deep learning has expanded significantly, with a focus on replicating human behaviors like computer vision and natural language processing (NLP).
-However, the underlying principles of deep learning are equally applicable to biological data <span class="citation" data-cites="pFUz3uIM">[<a href="#ref-pFUz3uIM" role="doc-biblioref">14</a>]</span>, <span class="citation" data-cites="G00xvi94">[<a href="#ref-G00xvi94" role="doc-biblioref">15</a>]</span>, <span class="citation" data-cites="1GmrcKOUZ">[<a href="#ref-1GmrcKOUZ" role="doc-biblioref">16</a>]</span>.
+However, the underlying principles of deep learning are equally applicable to biological data <span class="citation" data-cites="pFUz3uIM">[<a href="#ref-pFUz3uIM" role="doc-biblioref">16</a>]</span>, <span class="citation" data-cites="G00xvi94">[<a href="#ref-G00xvi94" role="doc-biblioref">17</a>]</span>, <span class="citation" data-cites="1GmrcKOUZ">[<a href="#ref-1GmrcKOUZ" role="doc-biblioref">18</a>]</span>.
 The key challenge lies in developing a model architecture that best fits a given problem.
-One underutilized strategy for deep learning model design is the NAS <span class="citation" data-cites="m8i11nOs">[<a href="#ref-m8i11nOs" role="doc-biblioref">17</a>]</span>.
+One underutilized strategy for deep learning model design is the NAS <span class="citation" data-cites="m8i11nOs">[<a href="#ref-m8i11nOs" role="doc-biblioref">19</a>]</span>.
 NAS serves a function like hyperparameter tuning, in that a range of values for specific hyperparameters are evaluated to obtain the optimal configurations.
 In the case of NAS, the concept is expanded to include model architecture in addition to hyperparameters, designing optimal and unique model architectures in an automated fashion.
-While NAS has been applied to genomic data <span class="citation" data-cites="tTQSNfDd">[<a href="#ref-tTQSNfDd" role="doc-biblioref">18</a>]</span>, its application to predicting proteomic data from transcriptomic data remains unexplored.</p>
-<p>We previously showed how machine learning can accurately predict the metabolome from the proteome, and how model interpretation revealed important biological insights <span class="citation" data-cites="TSZ5v6mu">[<a href="#ref-TSZ5v6mu" role="doc-biblioref">19</a>]</span>.
+While NAS has been applied to genomic data <span class="citation" data-cites="tTQSNfDd">[<a href="#ref-tTQSNfDd" role="doc-biblioref">20</a>]</span>, its application to predicting proteomic data from transcriptomic data remains unexplored.</p>
+<p>We previously showed how machine learning can accurately predict the metabolome from the proteome, and how model interpretation revealed important biological insights <span class="citation" data-cites="TSZ5v6mu">[<a href="#ref-TSZ5v6mu" role="doc-biblioref">21</a>]</span>.
 Here, we extend that work to transcript-to-protein deep learning prediction models and demonstrate that utilizing NAS improved the accuracy.
 Furthermore, we highlight the potential of model interpretation to identify patterns in transcript-protein relations that underpin biological processes characteristic of a disease state.</p>
 <h2 class="page_break_before" id="methods">Methods</h2>
@@ -172,7 +172,7 @@ Furthermore, we highlight the potential of model interpretation to identify patt
 The bridge design pattern specifically was used to allow for interchangeability of data source input to expand beyond CPTAC in the future, as well as for allowing custom processing and splitting depending on the experiment.
 This involved writing an abstract parent data processing class, and individual child classes would utilize compartmentalized class components specific to the experiment.
 This was done to enable external researchers to trace data processing workflows with ease.</p>
-<p>CPTAC data was downloaded directly from zenodo using the cptac python package <span class="citation" data-cites="JUKKQjRi">[<a href="#ref-JUKKQjRi" role="doc-biblioref">20</a>]</span> separately for each cancer type.
+<p>CPTAC data was downloaded directly from zenodo using the cptac python package <span class="citation" data-cites="JUKKQjRi">[<a href="#ref-JUKKQjRi" role="doc-biblioref">22</a>]</span> separately for each cancer type.
 Analyses were only performed using transcripts and proteins common between all datasets.</p>
 <p>Cancer-specific datasets were normalized independently of one another.
 For experiments where each dataset required an identical train-validation split, this normalization was calculated on the training partition then applied to the training and validation partitions both.
@@ -182,6 +182,48 @@ All non-target datasets were normalized on the entire dataset as the training pa
 In a standard data partition, each dataset had a split of 0.8, 0.1 and 0.1 for training, validation and testing, respectively.</p>
 <p>The final dataset contained data for breast cancer (BRCA), kidney cancer (CCRCC), colon cancer (COAD), brain cancer (GBM), squamous cell cancer (HNSCC), lung cancer (LSCC and LUAD), ovarian cancer (OV), and pancreatic cancer (PDAC) as well as adjacent healthy tissue.
 59286 transcripts and 7822 proteins were shared across all datasets with a combined number of 1256 samples.</p>
+<h3 id="nas">NAS</h3>
+<p>The search space used in this study chose a model architecture consisting of three segments, or blocks, of sub-architectures.
+These blocks could vary in number of neurons, number of layers, activation functions between layers, intra-block residual connections, dropout rates, or be removed entirely to simplify the network.
+It was determined that while mRNA to encoded protein quantities are not directly correlated, the quantity of one likely has a strong impact on the quantity of the other.
+Thus, the search space also included a residual connection inserting mRNA input quantities for proteins being predicted right before the final output layer of the network.</p>
+<p>The NAS workflow was based on the “Multi-Objective NAS with Ax” workflow tutorial on the official pytorch website <span class="citation" data-cites="U5iCRSdT">[<a href="#ref-U5iCRSdT" role="doc-biblioref">23</a>]</span>, utilizing Meta’s Ax package to do so.
+The process includes designing a search space as a separate python script that accepts variables that dictate the model structure, setting up a torchx runner and scheduler for submitting model training scripts concurrently, and defining optimization requirement configurations.
+Ax uses Bayesian optimization to evaluate and compare model configurations and their predictive accuracy, highlighting the impact specific architecture decisions have on the final loss.</p>
+<h3 id="model-evaluation-and-comparison">Model Evaluation and Comparison</h3>
+<p>Losses between predicted and true outputs were calculated using mean-squared error.
+The dummy regressor identified the mean of the true output data and used it as the prediction of all data points.
+The random forest regressor was run with log2 max feature and 50 node max depth limitations, as the number of inputs and outputs in creating a forest of full trees would otherwise require upwards of years to calculate.
+The manually designed model consisted of two hidden layers with output sizes of 12k, and 10k, respectively.
+Hidden layers employed batch normalization, a dropout rate of 0.6, and used the leaky ReLU activation function with a negative slope of 0.05 [Supplementary Figure 2].
+The NAS-optimized model consisted of three blocks of layers, followed by a single output layer.
+The first block consisted of a single neural layer with 319 neurons, a sigmoid activation function, a dropout rate of 0.52.
+The second block consisted of three neural layers with 508 neurons, a sigmoid activation function, a dropout rate of 0.69, and a residual connection skipping the middle layer.
+The third block consisted of a single neural layer with 7822 neurons (the output size), a tanh activation function, and a dropout rate of 0.9.
+The optimal model also sported a batch size of 128 and a learning rate of 1e-4.</p>
+<h3 id="model-interpretation-using-shap-values">Model Interpretation Using SHAP Values</h3>
+<p>SHAP values <span class="citation" data-cites="1DxcNZqTn">[<a href="#ref-1DxcNZqTn" role="doc-biblioref">24</a>]</span> were calculated using all available samples from CPTAC used in training and validation of the optimal model, which included the direct transcript residual connection.
+SHAP values for the top 13 accurately predicted proteins across cancers using the NAS optimized model were extracted and graphed independently, specifically CAVIN1, FERMT2, FLNA, HCLS1, TK3, MCM3, MCM4, MCM6, P4HB, PTPN6, SMC2, STAT1, and VCL.
+MMP14 was included as a candidate because of its role in cancer regulation.
+SHAP values for targeted proteins were extracted and analyzed independently of the raw SHAP outputs for memory efficiency purposes.</p>
+<p>Direct transcripts were determined by directly matching gene names to the list of predicted proteins.
+A cutoff of -15 mean absolute SHAP value was chosen to separate correlated and uncorrelated transcripts.
+Transcripts that had an absolute mean SHAP value above -15 in at least 70% of the chosen proteins were determined to belong to the correlated category.
+Transcripts that had a null or 0 SHAP value were excluded from categorization.</p>
+<p>A SHAP analysis was also run on 3 variations of the optimal model, specifically models with no input residual connection, a correlated transcript residual connection, and an uncorrelated transcript residual connection.
+To accommodate residual connections of varying lengths, the output size of the third block and the input size of the final output layer were altered to match the size of the residual connection for these adjustments.</p>
+<h3 id="code-availability">Code Availability</h3>
+<p>CPTAC data was downloaded using the cptac python package <span class="citation" data-cites="JUKKQjRi">[<a href="#ref-JUKKQjRi" role="doc-biblioref">22</a>]</span>.
+All models were developed using Pytorch <span class="citation" data-cites="s8HmkVXo">[<a href="#ref-s8HmkVXo" role="doc-biblioref">25</a>]</span> and Pytorch Lightning <span class="citation" data-cites="8YxzgbrC">[<a href="#ref-8YxzgbrC" role="doc-biblioref">26</a>]</span>.
+NAS was implemented with Meta’s Adaptive Experimentation Platform (Ax) <span class="citation" data-cites="7vpz6T76">[<a href="#ref-7vpz6T76" role="doc-biblioref">27</a>]</span>.
+NAS evaluation metrics were tracked with tensorboardX <span class="citation" data-cites="1BMsTBxbL">[<a href="#ref-1BMsTBxbL" role="doc-biblioref">28</a>]</span>.
+Scikit-learn was used to perform train-validation splits and several non-neural net regression models <span class="citation" data-cites="A42hbSau">[<a href="#ref-A42hbSau" role="doc-biblioref">29</a>]</span>.
+Pandas was used to load, process and save CPTAC data <span class="citation" data-cites="2z2qDwzz">[<a href="#ref-2z2qDwzz" role="doc-biblioref">30</a>]</span>. Numpy was used to perform various calculations <span class="citation" data-cites="1LexfAxj">[<a href="#ref-1LexfAxj" role="doc-biblioref">31</a>]</span>.
+SHAP was performed with the shap python package <span class="citation" data-cites="1DxcNZqTn">[<a href="#ref-1DxcNZqTn" role="doc-biblioref">24</a>]</span>.</p>
+<p>Code for data processing and model training and evaluation can be found at [https://github.com/xomicsdatascience/RnaToProteinDataModule].
+Classes for data processing and model generation can be found in the src directory, while scripts for running the different experiments can be found in the scripts directory.</p>
+<h3 id="large-language-model-edit">Large Language Model Edit</h3>
+<p>This paper was refined for human readability using Meta’s Llama 3 Large Language Model <span class="citation" data-cites="10uTsa339">[<a href="#ref-10uTsa339" role="doc-biblioref">32</a>/]</span>.</p>
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" class="references csl-bib-body" role="doc-bibliography">
@@ -218,32 +260,68 @@ In a standard data partition, each dataset had a split of 0.8, 0.1 and 0.1 for t
 <div id="ref-uorVZw61" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">11. </div><div class="csl-right-inline"><strong>Harmonization of quality metrics and power calculation in multi-omic studies</strong> <div class="csl-block">Sonia Tarazona, Leandro Balzano-Nogueira, David Gómez-Cabrero, Andreas Schmidt, Axel Imhof, Thomas Hankemeier, Jesper Tegnér, Johan A Westerhuis, Ana Conesa</div> <em>Nature Communications</em> (2020-06-18) <a href="https://doi.org/gg2pmg">https://doi.org/gg2pmg</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41467-020-16937-8">10.1038/s41467-020-16937-8</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/32555183">32555183</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7303201">PMC7303201</a></div></div>
 </div>
+<div id="ref-8fPWhXnE" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">12. </div><div class="csl-right-inline"><strong>CPTAC | Office of Cancer Clinical Proteomics Research</strong> <a href="https://proteomics.cancer.gov/programs/cptac">https://proteomics.cancer.gov/programs/cptac</a></div>
+</div>
+<div id="ref-GkTRlKPC" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">13. </div><div class="csl-right-inline"><strong>NCI-CPTAC DREAM Proteogenomics</strong> <div class="csl-block">admin</div> <em>DREAM Challenges</em> <a href="https://dreamchallenges.org/nci-cptac-dream-proteogenomics/">https://dreamchallenges.org/nci-cptac-dream-proteogenomics/</a></div>
+</div>
 <div id="ref-QZpIgf3V" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">12. </div><div class="csl-right-inline"><strong>Challenges in proteogenomics: a comparison of analysis methods with the case study of the DREAM proteogenomics sub-challenge</strong> <div class="csl-block">Tara Eicher, Andrew Patt, Esko Kautto, Raghu Machiraju, Ewy Mathé, Yan Zhang</div> <em>BMC Bioinformatics</em> (2019-12) <a href="https://doi.org/gpfz94">https://doi.org/gpfz94</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1186/s12859-019-3253-z">10.1186/s12859-019-3253-z</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31861998">31861998</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6923881">PMC6923881</a></div></div>
+<div class="csl-left-margin">14. </div><div class="csl-right-inline"><strong>Challenges in proteogenomics: a comparison of analysis methods with the case study of the DREAM proteogenomics sub-challenge</strong> <div class="csl-block">Tara Eicher, Andrew Patt, Esko Kautto, Raghu Machiraju, Ewy Mathé, Yan Zhang</div> <em>BMC Bioinformatics</em> (2019-12) <a href="https://doi.org/gpfz94">https://doi.org/gpfz94</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1186/s12859-019-3253-z">10.1186/s12859-019-3253-z</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31861998">31861998</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6923881">PMC6923881</a></div></div>
 </div>
 <div id="ref-DapLzepO" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">13. </div><div class="csl-right-inline"><strong>Joint learning improves protein abundance prediction in cancers</strong> <div class="csl-block">Hongyang Li, Omer Siddiqui, Hongjiu Zhang, Yuanfang Guan</div> <em>BMC Biology</em> (2019-12) <a href="https://doi.org/gr23js">https://doi.org/gr23js</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1186/s12915-019-0730-9">10.1186/s12915-019-0730-9</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31870366">31870366</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6929375">PMC6929375</a></div></div>
+<div class="csl-left-margin">15. </div><div class="csl-right-inline"><strong>Joint learning improves protein abundance prediction in cancers</strong> <div class="csl-block">Hongyang Li, Omer Siddiqui, Hongjiu Zhang, Yuanfang Guan</div> <em>BMC Biology</em> (2019-12) <a href="https://doi.org/gr23js">https://doi.org/gr23js</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1186/s12915-019-0730-9">10.1186/s12915-019-0730-9</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31870366">31870366</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6929375">PMC6929375</a></div></div>
 </div>
 <div id="ref-pFUz3uIM" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">14. </div><div class="csl-right-inline"><strong>Ensemble deep learning in bioinformatics</strong> <div class="csl-block">Yue Cao, Thomas Andrew Geddes, Jean Yee Hwa Yang, Pengyi Yang</div> <em>Nature Machine Intelligence</em> (2020-08-17) <a href="https://doi.org/ghhnj2">https://doi.org/ghhnj2</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s42256-020-0217-y">10.1038/s42256-020-0217-y</a></div></div>
+<div class="csl-left-margin">16. </div><div class="csl-right-inline"><strong>Ensemble deep learning in bioinformatics</strong> <div class="csl-block">Yue Cao, Thomas Andrew Geddes, Jean Yee Hwa Yang, Pengyi Yang</div> <em>Nature Machine Intelligence</em> (2020-08-17) <a href="https://doi.org/ghhnj2">https://doi.org/ghhnj2</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s42256-020-0217-y">10.1038/s42256-020-0217-y</a></div></div>
 </div>
 <div id="ref-G00xvi94" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">15. </div><div class="csl-right-inline"><strong>Deep learning in bioinformatics</strong> <div class="csl-block">Seonwoo Min, Byunghan Lee, Sungroh Yoon</div> <em>Briefings in Bioinformatics</em> (2016-07-29) <a href="https://doi.org/gcgk8v">https://doi.org/gcgk8v</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/bib/bbw068">10.1093/bib/bbw068</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/27473064">27473064</a></div></div>
+<div class="csl-left-margin">17. </div><div class="csl-right-inline"><strong>Deep learning in bioinformatics</strong> <div class="csl-block">Seonwoo Min, Byunghan Lee, Sungroh Yoon</div> <em>Briefings in Bioinformatics</em> (2016-07-29) <a href="https://doi.org/gcgk8v">https://doi.org/gcgk8v</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/bib/bbw068">10.1093/bib/bbw068</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/27473064">27473064</a></div></div>
 </div>
 <div id="ref-1GmrcKOUZ" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">16. </div><div class="csl-right-inline"><strong>Review of the Applications of Deep Learning in Bioinformatics</strong> <div class="csl-block">Yongqing Zhang, Jianrong Yan, Siyu Chen, Meiqin Gong, Dongrui Gao, Min Zhu, Wei Gan</div> <em>Current Bioinformatics</em> (2021-01-01) <a href="https://doi.org/gt3ts9">https://doi.org/gt3ts9</a> <div class="csl-block">DOI: <a href="https://doi.org/10.2174/1574893615999200711165743">10.2174/1574893615999200711165743</a></div></div>
+<div class="csl-left-margin">18. </div><div class="csl-right-inline"><strong>Review of the Applications of Deep Learning in Bioinformatics</strong> <div class="csl-block">Yongqing Zhang, Jianrong Yan, Siyu Chen, Meiqin Gong, Dongrui Gao, Min Zhu, Wei Gan</div> <em>Current Bioinformatics</em> (2021-01-01) <a href="https://doi.org/gt3ts9">https://doi.org/gt3ts9</a> <div class="csl-block">DOI: <a href="https://doi.org/10.2174/1574893615999200711165743">10.2174/1574893615999200711165743</a></div></div>
 </div>
 <div id="ref-m8i11nOs" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">17. </div><div class="csl-right-inline"><strong>A Comprehensive Survey of Neural Architecture Search</strong> <div class="csl-block">Pengzhen Ren, Yun Xiao, Xiaojun Chang, Po-yao Huang, Zhihui Li, Xiaojiang Chen, Xin Wang</div> <em>ACM Computing Surveys</em> (2021-05-24) <a href="https://doi.org/gk76qj">https://doi.org/gk76qj</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1145/3447582">10.1145/3447582</a></div></div>
+<div class="csl-left-margin">19. </div><div class="csl-right-inline"><strong>A Comprehensive Survey of Neural Architecture Search</strong> <div class="csl-block">Pengzhen Ren, Yun Xiao, Xiaojun Chang, Po-yao Huang, Zhihui Li, Xiaojiang Chen, Xin Wang</div> <em>ACM Computing Surveys</em> (2021-05-24) <a href="https://doi.org/gk76qj">https://doi.org/gk76qj</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1145/3447582">10.1145/3447582</a></div></div>
 </div>
 <div id="ref-tTQSNfDd" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">18. </div><div class="csl-right-inline"><strong>An automated framework for efficiently designing deep convolutional neural networks in genomics</strong> <div class="csl-block">Zijun Zhang, Christopher Y Park, Chandra L Theesfeld, Olga G Troyanskaya</div> <em>Nature Machine Intelligence</em> (2021-03-15) <a href="https://doi.org/gnfth7">https://doi.org/gnfth7</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s42256-021-00316-z">10.1038/s42256-021-00316-z</a></div></div>
+<div class="csl-left-margin">20. </div><div class="csl-right-inline"><strong>An automated framework for efficiently designing deep convolutional neural networks in genomics</strong> <div class="csl-block">Zijun Zhang, Christopher Y Park, Chandra L Theesfeld, Olga G Troyanskaya</div> <em>Nature Machine Intelligence</em> (2021-03-15) <a href="https://doi.org/gnfth7">https://doi.org/gnfth7</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s42256-021-00316-z">10.1038/s42256-021-00316-z</a></div></div>
 </div>
 <div id="ref-TSZ5v6mu" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">19. </div><div class="csl-right-inline"><strong>Multi-omic integration by machine learning (MIMaL)</strong> <div class="csl-block">Quinn Dickinson, Andreas Kohler, Martin Ott, Jesse G Meyer</div> <em>Bioinformatics</em> (2022-09-15) <a href="https://doi.org/gq93d7">https://doi.org/gq93d7</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/bioinformatics/btac631">10.1093/bioinformatics/btac631</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/36106996">36106996</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9801967">PMC9801967</a></div></div>
+<div class="csl-left-margin">21. </div><div class="csl-right-inline"><strong>Multi-omic integration by machine learning (MIMaL)</strong> <div class="csl-block">Quinn Dickinson, Andreas Kohler, Martin Ott, Jesse G Meyer</div> <em>Bioinformatics</em> (2022-09-15) <a href="https://doi.org/gq93d7">https://doi.org/gq93d7</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/bioinformatics/btac631">10.1093/bioinformatics/btac631</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/36106996">36106996</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9801967">PMC9801967</a></div></div>
 </div>
 <div id="ref-JUKKQjRi" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">20. </div><div class="csl-right-inline"><strong>Simplified and Unified Access to Cancer Proteogenomic Data</strong> <div class="csl-block">Caleb M Lindgren, David W Adams, Benjamin Kimball, Hannah Boekweg, Sadie Tayler, Samuel L Pugh, Samuel H Payne</div> <em>Journal of Proteome Research</em> (2021-02-09) <a href="https://doi.org/gt3tvb">https://doi.org/gt3tvb</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1021/acs.jproteome.0c00919">10.1021/acs.jproteome.0c00919</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/33560848">33560848</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8022323">PMC8022323</a></div></div>
+<div class="csl-left-margin">22. </div><div class="csl-right-inline"><strong>Simplified and Unified Access to Cancer Proteogenomic Data</strong> <div class="csl-block">Caleb M Lindgren, David W Adams, Benjamin Kimball, Hannah Boekweg, Sadie Tayler, Samuel L Pugh, Samuel H Payne</div> <em>Journal of Proteome Research</em> (2021-02-09) <a href="https://doi.org/gt3tvb">https://doi.org/gt3tvb</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1021/acs.jproteome.0c00919">10.1021/acs.jproteome.0c00919</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/33560848">33560848</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8022323">PMC8022323</a></div></div>
+</div>
+<div id="ref-U5iCRSdT" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">23. </div><div class="csl-right-inline"><strong>Multi-Objective NAS with Ax — PyTorch Tutorials 2.3.0+cu121 documentation</strong> <a href="https://pytorch.org/tutorials/intermediate/ax_multiobjective_nas_tutorial.html">https://pytorch.org/tutorials/intermediate/ax_multiobjective_nas_tutorial.html</a></div>
+</div>
+<div id="ref-1DxcNZqTn" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">24. </div><div class="csl-right-inline"><a href="http://papers.nips.cc/paper/7062-a-unified-approach-to-interpreting-model-predictions.pdf">http://papers.nips.cc/paper/7062-a-unified-approach-to-interpreting-model-predictions.pdf</a></div>
+</div>
+<div id="ref-s8HmkVXo" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">25. </div><div class="csl-right-inline"><strong>PyTorch 2: Faster Machine Learning Through Dynamic Python Bytecode Transformation and Graph Compilation</strong> <div class="csl-block">Jason Ansel, Edward Yang, Horace He, Natalia Gimelshein, Animesh Jain, Michael Voznesensky, Bin Bao, Peter Bell, David Berard, Evgeni Burovski, … Soumith Chintala</div> <em>Proceedings of the 29th ACM International Conference on Architectural Support for Programming Languages and Operating Systems, Volume 2</em> (2024-04-27) <a href="https://doi.org/gt2mnc">https://doi.org/gt2mnc</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1145/3620665.3640366">10.1145/3620665.3640366</a></div></div>
+</div>
+<div id="ref-8YxzgbrC" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">26. </div><div class="csl-right-inline"><strong>PyTorch Lightning</strong> <div class="csl-block">William Falcon, The PyTorch Lightning team</div> (2019-03) <a href="https://github.com/Lightning-AI/lightning">https://github.com/Lightning-AI/lightning</a></div>
+</div>
+<div id="ref-7vpz6T76" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">27. </div><div class="csl-right-inline"><strong>facebook/Ax</strong> <div class="csl-block">Meta</div> (2024-07-08) <a href="https://github.com/facebook/Ax">https://github.com/facebook/Ax</a></div>
+</div>
+<div id="ref-1BMsTBxbL" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">28. </div><div class="csl-right-inline"><strong>lanpa/tensorboardX</strong> <div class="csl-block">Tzu-Wei Huang</div> (2024-07-05) <a href="https://github.com/lanpa/tensorboardX">https://github.com/lanpa/tensorboardX</a></div>
+</div>
+<div id="ref-A42hbSau" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">29. </div><div class="csl-right-inline"><strong>Scikit-learn: Machine Learning in Python</strong> <div class="csl-block">Fabian Pedregosa, Gaël Varoquaux, Alexandre Gramfort, Vincent Michel, Bertrand Thirion, Olivier Grisel, Mathieu Blondel, Peter Prettenhofer, Ron Weiss, Vincent Dubourg, … Édouard Duchesnay</div> <em>Journal of Machine Learning Research</em> (2011) <a href="http://jmlr.org/papers/v12/pedregosa11a.html">http://jmlr.org/papers/v12/pedregosa11a.html</a></div>
+</div>
+<div id="ref-2z2qDwzz" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">30. </div><div class="csl-right-inline"><strong>pandas-dev/pandas: Pandas</strong> <div class="csl-block">The pandas development team</div> <em>Zenodo</em> (2024-04-10) <a href="https://doi.org/ggt8bh">https://doi.org/ggt8bh</a> <div class="csl-block">DOI: <a href="https://doi.org/10.5281/zenodo.3509134">10.5281/zenodo.3509134</a></div></div>
+</div>
+<div id="ref-1LexfAxj" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">31. </div><div class="csl-right-inline"><strong>Array programming with NumPy</strong> <div class="csl-block">Charles R Harris, KJarrod Millman, Stéfan J van der Walt, Ralf Gommers, Pauli Virtanen, David Cournapeau, Eric Wieser, Julian Taylor, Sebastian Berg, Nathaniel J Smith, … Travis E Oliphant</div> <em>Nature</em> (2020-09-16) <a href="https://doi.org/ghbzf2">https://doi.org/ghbzf2</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41586-020-2649-2">10.1038/s41586-020-2649-2</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/32939066">32939066</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7759461">PMC7759461</a></div></div>
+</div>
+<div id="ref-10uTsa339" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">32. </div><div class="csl-right-inline"><a href="https://ai.meta.com/blog/meta-llama-3">https://ai.meta.com/blog/meta-llama-3</a></div>
 </div>
 </div>
 <!-- default theme -->
