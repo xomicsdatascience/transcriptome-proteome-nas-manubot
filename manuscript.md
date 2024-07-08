@@ -23,8 +23,8 @@ header-includes: |
   <meta name="dc.date" content="2024-07-08" />
   <meta name="citation_publication_date" content="2024-07-08" />
   <meta property="article:published_time" content="2024-07-08" />
-  <meta name="dc.modified" content="2024-07-08T20:35:34+00:00" />
-  <meta property="article:modified_time" content="2024-07-08T20:35:34+00:00" />
+  <meta name="dc.modified" content="2024-07-08T20:56:31+00:00" />
+  <meta property="article:modified_time" content="2024-07-08T20:56:31+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -45,9 +45,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/" />
   <meta name="citation_pdf_url" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/00cce624746b50d2df908e8cf8962b29cba92694/" />
-  <meta name="manubot_html_url_versioned" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/00cce624746b50d2df908e8cf8962b29cba92694/" />
-  <meta name="manubot_pdf_url_versioned" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/00cce624746b50d2df908e8cf8962b29cba92694/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/d9b5c2384ee5252dca923b2d2c0e81839f05bfd4/" />
+  <meta name="manubot_html_url_versioned" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/d9b5c2384ee5252dca923b2d2c0e81839f05bfd4/" />
+  <meta name="manubot_pdf_url_versioned" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/d9b5c2384ee5252dca923b2d2c0e81839f05bfd4/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,9 +69,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/00cce624746b50d2df908e8cf8962b29cba92694/))
+([permalink](https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/d9b5c2384ee5252dca923b2d2c0e81839f05bfd4/))
 was automatically generated
-from [xomicsdatascience/transcriptome-proteome-nas-manubot@00cce62](https://github.com/xomicsdatascience/transcriptome-proteome-nas-manubot/tree/00cce624746b50d2df908e8cf8962b29cba92694)
+from [xomicsdatascience/transcriptome-proteome-nas-manubot@d9b5c23](https://github.com/xomicsdatascience/transcriptome-proteome-nas-manubot/tree/d9b5c2384ee5252dca923b2d2c0e81839f05bfd4)
 on July 8, 2024.
 </em></small>
 
@@ -235,6 +235,27 @@ Classes for data processing and model generation can be found in the src directo
 ### Large Language Model Edit
 
 This paper was refined for human readability using Meta’s Llama 3 Large Language Model [@url:https://ai.meta.com/blog/meta-llama-3/]. 
+
+## Results {.page_break_before}
+
+### CPTAC Model Configuration
+
+The CPTAC dataset provides a unique opportunity to investigate the relationships between multi-omic layers, particularly in predicting the proteome from transcriptome data [Figure 1A]. 
+A range of approaches were employed to achieve this, including one-to-one mapping of mRNA transcripts to proteins compared with various regressors: dummy, linear, random forest, and neural networks [Figure 1B]. 
+The latter proved to be the most variable, with different architectures yielding diverse predictive accuracies. 
+To address this, a NAS was utilized to automate the selection of optimal neural network architectures [Figure 1C]. 
+The NAS approach iteratively evaluated various model architectures from a search space to identify the most effective structure for predicting protein quantities from transcriptome data [Figures 1C, 1D]. 
+The optimal NAS model was benchmarked against other models, including a dummy regressor, and its performance was evaluated using a 100x2 cross-validation metric across different cancer types. 
+The results showed that the optimal NAS model consistently outperformed all other models, including the previously optimal random forest model [Figure 1E].  
+
+![**Comparison of methods for predicting the proteome from the transcriptome**
+(A) CPTAC cancer datasets were downloaded from the web and processed to match samples across omic layers. 
+(B) Four primary methods were evaluated for predicting the proteome from the transcriptome.
+They are a dummy regressor to serve as a benchmark, a random forest regressor, a manually designed neural network, and an optimized neural network chosen via NAS. 
+(C) The primary outline of the NAS search space used to identify the optimized neural network. 
+(D) The model architecture of the optimized neural network. 
+(E) A comparison between the four methods via 100x2 cross validation, indicating the optimized neural network outperforms all the others.](images/fig1_overview.svg){#fig:overview tag="1" width="100%"}
+
 
 ## References {.page_break_before}
 
