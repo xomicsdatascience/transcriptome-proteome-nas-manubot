@@ -15,7 +15,9 @@ authors:
     twitter: CalebCranney
     email: caleb.cranney.app@gmail.com
     affiliations:
-      - Department of Computational Biomedicine, Cedars Sinai Medical Center
+      - Department of Computational Biomedicine, Cedars Sinai Medical Center, Los Angeles CA 90048
+      - Smidt Heart Institute, Cedars Sinai Medical Center, Los Angeles CA 90048
+      - Advanced Clinical Biosystems Research Institute, Cedars Sinai Medical Center, Los Angeles CA 90048
     funders:
       - Grant R35GM142502, National Institute of General Medical Sciences (NIGMS)
 
@@ -26,5 +28,9 @@ authors:
     twitter: j_my_sci
     email: jessegmeyer@gmail.com
     affiliations:
-      - Department of Computational Biomedicine, Cedars Sinai Medical Center
+      - Department of Computational Biomedicine, Cedars Sinai Medical Center, Los Angeles CA 90048
+      - Smidt Heart Institute, Cedars Sinai Medical Center, Los Angeles CA 90048
+      - Advanced Clinical Biosystems Research Institute, Cedars Sinai Medical Center, Los Angeles CA 90048
+    funders:
+      - Grant R35GM142502, National Institute of General Medical Sciences (NIGMS)
 
