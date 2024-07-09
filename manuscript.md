@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2024-07-08'
+date-meta: '2024-07-09'
 author-meta:
 - Caleb W. Cranney
 - Jesse G. Meyer
@@ -20,11 +20,11 @@ header-includes: |
   <meta name="citation_title" content="Multi-Dataset Integration and Residual Connections Improve Proteome Prediction from Transcriptomics Using Deep Learning" />
   <meta property="og:title" content="Multi-Dataset Integration and Residual Connections Improve Proteome Prediction from Transcriptomics Using Deep Learning" />
   <meta property="twitter:title" content="Multi-Dataset Integration and Residual Connections Improve Proteome Prediction from Transcriptomics Using Deep Learning" />
-  <meta name="dc.date" content="2024-07-08" />
-  <meta name="citation_publication_date" content="2024-07-08" />
-  <meta property="article:published_time" content="2024-07-08" />
-  <meta name="dc.modified" content="2024-07-08T21:53:52+00:00" />
-  <meta property="article:modified_time" content="2024-07-08T21:53:52+00:00" />
+  <meta name="dc.date" content="2024-07-09" />
+  <meta name="citation_publication_date" content="2024-07-09" />
+  <meta property="article:published_time" content="2024-07-09" />
+  <meta name="dc.modified" content="2024-07-09T15:09:52+00:00" />
+  <meta property="article:modified_time" content="2024-07-09T15:09:52+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -45,9 +45,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/" />
   <meta name="citation_pdf_url" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/f25e39537503286b1db5487b425e9807700661dc/" />
-  <meta name="manubot_html_url_versioned" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/f25e39537503286b1db5487b425e9807700661dc/" />
-  <meta name="manubot_pdf_url_versioned" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/f25e39537503286b1db5487b425e9807700661dc/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/bb856c350fd145dcb3de243e9cd25028a187e459/" />
+  <meta name="manubot_html_url_versioned" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/bb856c350fd145dcb3de243e9cd25028a187e459/" />
+  <meta name="manubot_pdf_url_versioned" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/bb856c350fd145dcb3de243e9cd25028a187e459/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,10 +69,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/f25e39537503286b1db5487b425e9807700661dc/))
+([permalink](https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/bb856c350fd145dcb3de243e9cd25028a187e459/))
 was automatically generated
-from [xomicsdatascience/transcriptome-proteome-nas-manubot@f25e395](https://github.com/xomicsdatascience/transcriptome-proteome-nas-manubot/tree/f25e39537503286b1db5487b425e9807700661dc)
-on July 8, 2024.
+from [xomicsdatascience/transcriptome-proteome-nas-manubot@bb856c3](https://github.com/xomicsdatascience/transcriptome-proteome-nas-manubot/tree/bb856c350fd145dcb3de243e9cd25028a187e459)
+on July 9, 2024.
 </em></small>
 
 
