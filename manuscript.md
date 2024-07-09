@@ -23,8 +23,8 @@ header-includes: |
   <meta name="dc.date" content="2024-07-09" />
   <meta name="citation_publication_date" content="2024-07-09" />
   <meta property="article:published_time" content="2024-07-09" />
-  <meta name="dc.modified" content="2024-07-09T21:04:47+00:00" />
-  <meta property="article:modified_time" content="2024-07-09T21:04:47+00:00" />
+  <meta name="dc.modified" content="2024-07-09T21:08:48+00:00" />
+  <meta property="article:modified_time" content="2024-07-09T21:08:48+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -32,11 +32,15 @@ header-includes: |
   <meta name="citation_journal_title" content="Manubot" />
   <meta name="citation_technical_report_institution" content="Manubot" />
   <meta name="citation_author" content="Caleb W. Cranney" />
-  <meta name="citation_author_institution" content="Department of Computational Biomedicine, Cedars Sinai Medical Center" />
+  <meta name="citation_author_institution" content="Department of Computational Biomedicine, Cedars Sinai Medical Center, Los Angeles CA 90048" />
+  <meta name="citation_author_institution" content="Smidt Heart Institute, Cedars Sinai Medical Center, Los Angeles CA 90048" />
+  <meta name="citation_author_institution" content="Advanced Clinical Biosystems Research Institute, Cedars Sinai Medical Center, Los Angeles CA 90048" />
   <meta name="citation_author_orcid" content="0000-0001-8482-758X" />
   <meta name="twitter:creator" content="@CalebCranney" />
   <meta name="citation_author" content="Jesse G. Meyer" />
-  <meta name="citation_author_institution" content="Department of Computational Biomedicine, Cedars Sinai Medical Center" />
+  <meta name="citation_author_institution" content="Department of Computational Biomedicine, Cedars Sinai Medical Center, Los Angeles CA 90048" />
+  <meta name="citation_author_institution" content="Smidt Heart Institute, Cedars Sinai Medical Center, Los Angeles CA 90048" />
+  <meta name="citation_author_institution" content="Advanced Clinical Biosystems Research Institute, Cedars Sinai Medical Center, Los Angeles CA 90048" />
   <meta name="citation_author_orcid" content="0000-0003-2753-3926" />
   <meta name="twitter:creator" content="@j_my_sci" />
   <link rel="canonical" href="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/" />
@@ -45,9 +49,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/" />
   <meta name="citation_pdf_url" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/23968baad2c6cfb09f7aa5c9a8c8700cd5daafda/" />
-  <meta name="manubot_html_url_versioned" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/23968baad2c6cfb09f7aa5c9a8c8700cd5daafda/" />
-  <meta name="manubot_pdf_url_versioned" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/23968baad2c6cfb09f7aa5c9a8c8700cd5daafda/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/9b992c49f7ef74be08565fdb10bd2f90f05300b1/" />
+  <meta name="manubot_html_url_versioned" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/9b992c49f7ef74be08565fdb10bd2f90f05300b1/" />
+  <meta name="manubot_pdf_url_versioned" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/9b992c49f7ef74be08565fdb10bd2f90f05300b1/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,9 +73,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/23968baad2c6cfb09f7aa5c9a8c8700cd5daafda/))
+([permalink](https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/9b992c49f7ef74be08565fdb10bd2f90f05300b1/))
 was automatically generated
-from [xomicsdatascience/transcriptome-proteome-nas-manubot@23968ba](https://github.com/xomicsdatascience/transcriptome-proteome-nas-manubot/tree/23968baad2c6cfb09f7aa5c9a8c8700cd5daafda)
+from [xomicsdatascience/transcriptome-proteome-nas-manubot@9b992c4](https://github.com/xomicsdatascience/transcriptome-proteome-nas-manubot/tree/9b992c49f7ef74be08565fdb10bd2f90f05300b1)
 on July 9, 2024.
 </em></small>
 
@@ -91,7 +95,7 @@ on July 9, 2024.
     [CalebCranney](https://twitter.com/CalebCranney)
     <br>
   <small>
-     Department of Computational Biomedicine, Cedars Sinai Medical Center
+     Department of Computational Biomedicine, Cedars Sinai Medical Center, Los Angeles CA 90048; Smidt Heart Institute, Cedars Sinai Medical Center, Los Angeles CA 90048; Advanced Clinical Biosystems Research Institute, Cedars Sinai Medical Center, Los Angeles CA 90048
      · Funded by Grant R35GM142502, National Institute of General Medical Sciences (NIGMS)
   </small>
 
@@ -105,7 +109,8 @@ on July 9, 2024.
     [j_my_sci](https://twitter.com/j_my_sci)
     <br>
   <small>
-     Department of Computational Biomedicine, Cedars Sinai Medical Center
+     Department of Computational Biomedicine, Cedars Sinai Medical Center, Los Angeles CA 90048; Smidt Heart Institute, Cedars Sinai Medical Center, Los Angeles CA 90048; Advanced Clinical Biosystems Research Institute, Cedars Sinai Medical Center, Los Angeles CA 90048
+     · Funded by Grant R35GM142502, National Institute of General Medical Sciences (NIGMS)
   </small>
 
 
