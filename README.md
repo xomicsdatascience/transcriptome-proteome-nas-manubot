@@ -1,7 +1,7 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/xomicsdatascience/transcriptome-proteome-nas-manubot/tree/gh-pages) branch hosts the contents of this directory at <https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/>.
-The permalink for this webpage version is <https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/bb856c350fd145dcb3de243e9cd25028a187e459/>.
+The permalink for this webpage version is <https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/2f7324166d9dab9b8212a03f1f2d30ba8134ce1d/>.
 To redirect to the permalink for the latest manuscript version at anytime, use the link <https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/freeze/>.
 
 ## Files
@@ -35,4 +35,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`bb856c350fd145dcb3de243e9cd25028a187e459`](https://github.com/xomicsdatascience/transcriptome-proteome-nas-manubot/commit/bb856c350fd145dcb3de243e9cd25028a187e459).
+[`2f7324166d9dab9b8212a03f1f2d30ba8134ce1d`](https://github.com/xomicsdatascience/transcriptome-proteome-nas-manubot/commit/2f7324166d9dab9b8212a03f1f2d30ba8134ce1d).
