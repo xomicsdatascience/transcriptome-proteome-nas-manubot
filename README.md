@@ -10,8 +10,14 @@
 
 <!-- usage note: edit this section. -->
 
-This repository is a template manuscript (a.k.a. rootstock).
-Actual manuscript instances will clone this repository (see [`SETUP.md`](SETUP.md)) and replace this paragraph with a description of their manuscript.
+### Collaboration Offer
+ 
+This paper was a singular effort from the Meyer Lab at Cedars Sinai Medical Center in LA. The intent was to use deep learning methods to tease out possible transcript-protein relationships of biological significance in cancer data and, looking ahead, beyond. The paper establishes several directions we went in interpreting SHAP values to achieve this aim. However, we understand that SHAP values can provide greater insights than we specifically explored, and that other researchers would be interested in performing additional analyses. Thus, in addition to our preprint submission, we have created this manubot version of the paper.
+ 
+For interested researchers, contributions to the paper would be tracked for inclusion as authors in the final submission. As an authorship requirement you must contribute at least one figure that appears in the paper, though that is open for discussion. To contribute, fork the repository, make your edits, then make a pull request. For data analysis, CPTAC is freely available for use [link], and our GitHub repository for our data analysis [link] was written to be readable and reusable. In the data analysis repository, the original Neural Architectural Search is found in the main branch, and SHAP experimentation occurred in the input_residual_connections branch.
+ 
+Please reach out via GitHub issues to discuss your proposed analysis and whether it would qualify for authorship.
+
 
 ## Manubot
 
