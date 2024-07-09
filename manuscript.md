@@ -23,8 +23,8 @@ header-includes: |
   <meta name="dc.date" content="2024-07-09" />
   <meta name="citation_publication_date" content="2024-07-09" />
   <meta property="article:published_time" content="2024-07-09" />
-  <meta name="dc.modified" content="2024-07-09T15:09:52+00:00" />
-  <meta property="article:modified_time" content="2024-07-09T15:09:52+00:00" />
+  <meta name="dc.modified" content="2024-07-09T21:02:25+00:00" />
+  <meta property="article:modified_time" content="2024-07-09T21:02:25+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -45,9 +45,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/" />
   <meta name="citation_pdf_url" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/bb856c350fd145dcb3de243e9cd25028a187e459/" />
-  <meta name="manubot_html_url_versioned" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/bb856c350fd145dcb3de243e9cd25028a187e459/" />
-  <meta name="manubot_pdf_url_versioned" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/bb856c350fd145dcb3de243e9cd25028a187e459/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/2f7324166d9dab9b8212a03f1f2d30ba8134ce1d/" />
+  <meta name="manubot_html_url_versioned" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/2f7324166d9dab9b8212a03f1f2d30ba8134ce1d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/2f7324166d9dab9b8212a03f1f2d30ba8134ce1d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,9 +69,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/bb856c350fd145dcb3de243e9cd25028a187e459/))
+([permalink](https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/2f7324166d9dab9b8212a03f1f2d30ba8134ce1d/))
 was automatically generated
-from [xomicsdatascience/transcriptome-proteome-nas-manubot@bb856c3](https://github.com/xomicsdatascience/transcriptome-proteome-nas-manubot/tree/bb856c350fd145dcb3de243e9cd25028a187e459)
+from [xomicsdatascience/transcriptome-proteome-nas-manubot@2f73241](https://github.com/xomicsdatascience/transcriptome-proteome-nas-manubot/tree/2f7324166d9dab9b8212a03f1f2d30ba8134ce1d)
 on July 9, 2024.
 </em></small>
 

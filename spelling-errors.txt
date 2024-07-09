@@ -62,8 +62,8 @@ pre
 Preprocessing
 Proteogenomics
 proteome
-proteomes
-proteomic
+Proteomes
+Proteomic
 Proteomics
 pseudogene
 pseudogenes
