@@ -1,4 +1,4 @@
-# Automated scholarly manuscripts on GitHub
+# Multi-Omic Integration with Deep Learning
 
 <!-- usage note: edit the H1 title above to personalize the manuscript -->
 
