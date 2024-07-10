@@ -11,7 +11,7 @@ CAVIN
 CCranney
 CCRCC
 COAD
-cptac
+CPTAC
 Cranney
 Dasom
 dataset
@@ -64,7 +64,7 @@ Preprocessing
 proteogenomics
 proteome
 Proteomes
-Proteomic
+proteomic
 Proteomics
 pseudogene
 pseudogenes
