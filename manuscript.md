@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2024-07-12'
+date-meta: '2024-07-16'
 author-meta:
 - Caleb W. Cranney
 - Jesse G. Meyer
@@ -20,11 +20,11 @@ header-includes: |
   <meta name="citation_title" content="Multi-Dataset Integration and Residual Connections Improve Proteome Prediction from Transcriptomics Using Deep Learning" />
   <meta property="og:title" content="Multi-Dataset Integration and Residual Connections Improve Proteome Prediction from Transcriptomics Using Deep Learning" />
   <meta property="twitter:title" content="Multi-Dataset Integration and Residual Connections Improve Proteome Prediction from Transcriptomics Using Deep Learning" />
-  <meta name="dc.date" content="2024-07-12" />
-  <meta name="citation_publication_date" content="2024-07-12" />
-  <meta property="article:published_time" content="2024-07-12" />
-  <meta name="dc.modified" content="2024-07-12T15:21:07+00:00" />
-  <meta property="article:modified_time" content="2024-07-12T15:21:07+00:00" />
+  <meta name="dc.date" content="2024-07-16" />
+  <meta name="citation_publication_date" content="2024-07-16" />
+  <meta property="article:published_time" content="2024-07-16" />
+  <meta name="dc.modified" content="2024-07-16T16:14:41+00:00" />
+  <meta property="article:modified_time" content="2024-07-16T16:14:41+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -49,9 +49,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/" />
   <meta name="citation_pdf_url" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/74496506ff7020189813b4d045ed94751d72f48f/" />
-  <meta name="manubot_html_url_versioned" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/74496506ff7020189813b4d045ed94751d72f48f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/74496506ff7020189813b4d045ed94751d72f48f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/92f5a7af1b08f296f3d5f2f629f3b3ce9bc077ba/" />
+  <meta name="manubot_html_url_versioned" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/92f5a7af1b08f296f3d5f2f629f3b3ce9bc077ba/" />
+  <meta name="manubot_pdf_url_versioned" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/92f5a7af1b08f296f3d5f2f629f3b3ce9bc077ba/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -73,10 +73,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/74496506ff7020189813b4d045ed94751d72f48f/))
+([permalink](https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/92f5a7af1b08f296f3d5f2f629f3b3ce9bc077ba/))
 was automatically generated
-from [xomicsdatascience/transcriptome-proteome-nas-manubot@7449650](https://github.com/xomicsdatascience/transcriptome-proteome-nas-manubot/tree/74496506ff7020189813b4d045ed94751d72f48f)
-on July 12, 2024.
+from [xomicsdatascience/transcriptome-proteome-nas-manubot@92f5a7a](https://github.com/xomicsdatascience/transcriptome-proteome-nas-manubot/tree/92f5a7af1b08f296f3d5f2f629f3b3ce9bc077ba)
+on July 16, 2024.
 </em></small>
 
 
@@ -389,6 +389,62 @@ We appreciate advice from Zijun (Frank) Zhang related to NAS and Alexandre Hutto
 Dasom Hwang helped with graphic design. 
 This work was funded by the National Institute of General Medical Sciences (NIGMS) R35GM142502. 
  
+
+## Supplementary Materials {.page_break_before}
+
+![**Comparing all dataset use in training vs. only target dataset use in training.**
+Target dataset had an 80:20 trainining:validation split for all replicate calculations. 
+In the justTargetDataset runs, no addiional changes were made. 
+In the allDatasets runs, the training data was supplemented with all full non-target datasets.](images/sup_fig1_allVsTargetDatasetBoxplot.svg){#fig:allVsTargetDatasetBoxplot tag="6 - figure supplement 1" width="100%"}
+
+![**Manually designed neural network architecture.**
+Prior to Neural Architectural search optimization, 
+a simple three-layer network with leaky relu activation functions was trained on the CPTAC datasets.](images/sup_fig2_manual_NN.svg){#fig:manual_NN tag="7 - figure supplement 2" width="100%"}
+
+![**Model interpretation evaluating transcript impact on specific protein predictions.**
+SHAP analysis was performed for several of the most well-predicted proteins using all samples in the dataset. 
+A kernel density graph (KDE) was plotted for mean absolute SHAP (y axis) versus spearman coefficient (x axis) for each transcript’s relation to 
+(A) CAVIN1, 
+(B) FERMT2, 
+(C) FLNA, 
+(D) HCLS1, 
+(E) HK3, 
+(F) MCM3, 
+(G) MCM4, 
+(H) MCM6, 
+(I) MMP14, 
+(J) P4HB, 
+(K) PTPN6, 
+(L) SMC2, 
+(M) STAT1, 
+and (N) VCL 
+proteins specifically.](images/sup_fig3_all_kde.svg){#fig:all_kde tag="8 - figure supplement 3" width="100%"}
+
+| category                           | direct | correlated | uncorrelated | noCount |
+|------------------------------------|--------|------------|--------------|---------|
+| IG_V_gene                          | 69     | 62         | 14           | 0       |
+| IG_V_pseudogene                    | 0      | 26         | 149          | 8       |
+| TEC                                | 0      | 739        | 271          | 6       |
+| TR_V_gene                          | 0      | 83         | 23           | 0       |
+| lncRNA                             | 0      | 10851      | 5539         | 112     |
+| miRNA                              | 0      | 8          | 497          | 668     |
+| misc_RNA                           | 0      | 386        | 641          | 11      |
+| processed_pseudogene               | 0      | 4275       | 5760         | 144     |
+| protein_coding                     | 7743   | 10700      | 1438         | 18      |
+| rRNA_pseudogene                    | 0      | 6          | 370          | 113     |
+| snRNA                              | 0      | 68         | 1186         | 409     |
+| snoRNA                             | 0      | 164        | 110          | 54      |
+| transcribed_processed_pseudogene   | 0      | 352        | 145          | 4       |
+| transcribed_unitary_pseudogene     | 0      | 114        | 41           | 0       |
+| transcribed_unprocessed_pseudogene | 0      | 654        | 254          | 7       |
+| unprocessed_pseudogene             | 0      | 649        | 1820         | 78      |
+
+Supplement Table 1: Biological function categorization of transcripts for each experimental predictive category.
+{#tbl:transcript-function}
+
+
+
+
 
 ## References {.page_break_before}
 
