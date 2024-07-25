@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Caleb W. Cranney" />
   <meta name="author" content="Jesse G. Meyer" />
-  <meta name="dcterms.date" content="2024-07-16" />
+  <meta name="dcterms.date" content="2024-07-25" />
   <meta name="keywords" content="markdown, publishing, manubot" />
   <title>Multi-Dataset Integration and Residual Connections Improve Proteome Prediction from Transcriptomics Using Deep Learning</title>
   <style>
@@ -51,11 +51,11 @@
   <meta name="citation_title" content="Multi-Dataset Integration and Residual Connections Improve Proteome Prediction from Transcriptomics Using Deep Learning" />
   <meta property="og:title" content="Multi-Dataset Integration and Residual Connections Improve Proteome Prediction from Transcriptomics Using Deep Learning" />
   <meta property="twitter:title" content="Multi-Dataset Integration and Residual Connections Improve Proteome Prediction from Transcriptomics Using Deep Learning" />
-  <meta name="dc.date" content="2024-07-16" />
-  <meta name="citation_publication_date" content="2024-07-16" />
-  <meta property="article:published_time" content="2024-07-16" />
-  <meta name="dc.modified" content="2024-07-16T16:14:41+00:00" />
-  <meta property="article:modified_time" content="2024-07-16T16:14:41+00:00" />
+  <meta name="dc.date" content="2024-07-25" />
+  <meta name="citation_publication_date" content="2024-07-25" />
+  <meta property="article:published_time" content="2024-07-25" />
+  <meta name="dc.modified" content="2024-07-25T21:37:52+00:00" />
+  <meta property="article:modified_time" content="2024-07-25T21:37:52+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -80,9 +80,9 @@
   <meta name="citation_fulltext_html_url" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/" />
   <meta name="citation_pdf_url" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/92f5a7af1b08f296f3d5f2f629f3b3ce9bc077ba/" />
-  <meta name="manubot_html_url_versioned" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/92f5a7af1b08f296f3d5f2f629f3b3ce9bc077ba/" />
-  <meta name="manubot_pdf_url_versioned" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/92f5a7af1b08f296f3d5f2f629f3b3ce9bc077ba/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/5d752f7c744feeb2a270e6124d4f076d04dec620/" />
+  <meta name="manubot_html_url_versioned" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/5d752f7c744feeb2a270e6124d4f076d04dec620/" />
+  <meta name="manubot_pdf_url_versioned" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/5d752f7c744feeb2a270e6124d4f076d04dec620/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -99,10 +99,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/92f5a7af1b08f296f3d5f2f629f3b3ce9bc077ba/">permalink</a>)
+(<a href="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/5d752f7c744feeb2a270e6124d4f076d04dec620/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/xomicsdatascience/transcriptome-proteome-nas-manubot/tree/92f5a7af1b08f296f3d5f2f629f3b3ce9bc077ba">xomicsdatascience/transcriptome-proteome-nas-manubot@92f5a7a</a>
-on July 16, 2024.
+from <a href="https://github.com/xomicsdatascience/transcriptome-proteome-nas-manubot/tree/5d752f7c744feeb2a270e6124d4f076d04dec620">xomicsdatascience/transcriptome-proteome-nas-manubot@5d752f7</a>
+on July 25, 2024.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -237,17 +237,18 @@ The latter proved to be the most variable, with different architectures yielding
 To address this, a NAS was utilized to automate the selection of optimal neural network architectures [Figure 1C].
 The NAS approach iteratively evaluated various model architectures from a search space to identify the most effective structure for predicting protein quantities from transcriptome data [Figures 1C, 1D].
 The optimal NAS model was benchmarked against other models, including a dummy regressor, and its performance was evaluated using a 100x2 cross-validation metric across different cancer types.
-The results showed that the optimal NAS model consistently outperformed all other models, including the previously optimal random forest model [Figure 1E].</p>
+The results showed that the optimal NAS model consistently outperformed all other models, including the previously optimal random forest model [Figure 1E, Supplementary Figure 3].</p>
 <div id="fig:overview" class="fignos">
 <figure>
-<img src="images/fig1_overview.svg" style="width:100.0%" data-tag="1" alt="Figure 1: Comparison of methods for predicting the proteome from the transcriptome. (A) CPTAC cancer datasets were downloaded from the web and processed to match samples across omic layers. (B) Four primary methods were evaluated for predicting the proteome from the transcriptome. They are a dummy regressor to serve as a benchmark, a random forest regressor, a manually designed neural network, and an optimized neural network chosen via NAS. (C) The primary outline of the NAS search space used to identify the optimized neural network. (D) The model architecture of the optimized neural network. (E) A comparison between the four methods via 100x2 cross validation, indicating the optimized neural network outperforms all the others." />
+<img src="images/fig1_overview.svg" style="width:100.0%" data-tag="1" alt="Figure 1: Comparison of methods for predicting the proteome from the transcriptome. (A) CPTAC cancer datasets were downloaded from the web and processed to match samples across omic layers. (B) Four primary methods were evaluated for predicting the proteome from the transcriptome. They are a dummy regressor to serve as a benchmark, a random forest regressor, a manually designed neural network, and an optimized neural network chosen via NAS. (C) The primary outline of the NAS search space used to identify the optimized neural network. (D) The model architecture of the optimized neural network. (E) A comparison between the four methods via 100x2 cross validation, indicating the optimized neural network outperforms all the others. While the Y-axis was shortened for visibility, a rendering was provided in Supplementary Figure 3 that captures the full boxplot whiskers." />
 <figcaption aria-hidden="true"><span>Figure 1:</span> <strong>Comparison of methods for predicting the proteome from the transcriptome.</strong>
 (A) CPTAC cancer datasets were downloaded from the web and processed to match samples across omic layers.
 (B) Four primary methods were evaluated for predicting the proteome from the transcriptome.
 They are a dummy regressor to serve as a benchmark, a random forest regressor, a manually designed neural network, and an optimized neural network chosen via NAS.
 (C) The primary outline of the NAS search space used to identify the optimized neural network.
 (D) The model architecture of the optimized neural network.
-(E) A comparison between the four methods via 100x2 cross validation, indicating the optimized neural network outperforms all the others.</figcaption>
+(E) A comparison between the four methods via 100x2 cross validation, indicating the optimized neural network outperforms all the others.
+While the Y-axis was shortened for visibility, a rendering was provided in Supplementary Figure 3 that captures the full boxplot whiskers.</figcaption>
 </figure>
 </div>
 <h3 id="model-performance-and-correlation-analysis">Model Performance and Correlation Analysis</h3>
@@ -285,7 +286,7 @@ Corresponding to the search space summary, the categories map to
 <p>To uncover biological features underlying the transcriptome-proteome relationship, a Shapley Additive Explanation (SHAP)<span class="citation" data-cites="1DxcNZqTn">[<a href="#ref-1DxcNZqTn" role="doc-biblioref">24</a>]</span> analysis was performed to identify key transcripts correlated with protein quantities.
 The results showed that mRNA transcripts emphasized by the mRNA residual connection had distinctly higher average absolute SHAP values, highlighting the importance of this connection.
 Furthermore, a clear distinction was observed between transcripts correlated with protein quantity and those that were not, with the former exhibiting higher SHAP values.
-These transcripts were categorized as direct, correlated, and uncorrelated, respectively [Figure 3, Supplementary Figure 3].</p>
+These transcripts were categorized as direct, correlated, and uncorrelated, respectively [Figure 3, Supplementary Figure 4].</p>
 <div id="fig:kde" class="fignos">
 <figure>
 <img src="images/fig3_kde.svg" style="width:100.0%" data-tag="3" alt="Figure 3: Model interpretation evaluating transcript impact on specific protein predictions. SHAP analysis was performed for several of the most well-predicted proteins using all samples in the dataset. As a correlative benchmark, the spearman coefficient between each transcript quantity and the specific protein quantity was also determined. A spearman coefficient of 0 indicates no correlation while negative or positive values indicate negative or positive correlation, respectively. A kernel density graph (KDE) was plotted for mean absolute SHAP (y axis) versus spearman coefficient (x axis) for each transcript’s relation to (A) MCM6, (B) VCL, and (C) FERMT2 proteins specifically. Three general patterns of transcripts appeared, namely a high-impact group, a semi-correlated mid-impact group, and an uncorrelated low-impact group." />
@@ -325,7 +326,7 @@ The correlated transcripts emphasized long non-coding RNAs and indirect protein 
 Overall, the findings highlight the importance of optimizing neural network architectures and incorporating biologically relevant features, such as mRNA residual connections and correlated transcripts, to improve the prediction of protein quantities from transcriptome data.</p>
 <div id="fig:transcript_function_heatmaps" class="fignos">
 <figure>
-<img src="images/fig5_transcript_function_heatmaps.svg" style="width:100.0%" data-tag="5" alt="Figure 5: Evaluation of the functional composition of experimentally-derived categories of transcripts. Transcript experimental categories are (1) direct transcripts, (2) correlated transcripts, (3) uncorrelated transcripts, and (4) transcripts in the dataset with zero quantity in the analyzed samples. Transcript functional categories are (1) ‘IG_V_gene,’ or immunoglobulin variable chain genes, (2) ‘IG_V_pseudogene,’ or inactivated immunoglobulin genes, (3) ‘TEC,’ or transcripts to be experimentally confirmed, (4) ‘TR_V_gene,’ or T-cell receptor genes, (5) ‘lncRNA,’ or long non-coding RNAs, (6) ‘miRNA,’ or microRNAs, (7) ‘miscRNA,’ or miscellaneous other RNAs, (8) ‘processed_pseudogene,’ or pseudogenes that lack introns, (9) ‘protein_coding,’ or transcripts that contain an open reading frame, (10) ‘rRNA_pseudogene,’ or non-coding ribosomal RNAs predicted to be a pseudogenes by the Ensembl pipeline, (11) ‘snRNA,’ or small nuclear RNAs, (12) ‘snoRNA,’ or small nucleolar RNA, (13) ‘transcribed_processed_pseudogene,’ or pseudogenes that lack introns and have expression indicated by locus-specific transcripts, (14) ‘transcribed_unitary_pseudogene’, or pseudogenes where the presence of locus-specific transcripts indicates expression and there is an active orthologue in another species, (15) ‘transcribed_unprocessed_pseudogene,’ or pseudogenes with introns and have expression indicated by locus-specific transcripts, and (16) ‘unprocessed_pseudogene,’ or pseudogenes with introns. (A) Heatmap of proportions of transcripts across experimental categories. (B) Heatmap of proportions of transcripts across functional categories." />
+<img src="images/fig5_transcript_function_heatmaps.svg" style="width:100.0%" data-tag="5" alt="Figure 5: Evaluation of the functional composition of experimentally-derived categories of transcripts. Transcript experimental categories are (1) direct transcripts, (2) correlated transcripts, (3) uncorrelated transcripts, and (4) transcripts in the dataset with zero quantity in the analyzed samples. Transcript functional categories are (1) ‘IG_V_gene,’ or immunoglobulin variable chain genes, (2) ‘IG_V_pseudogene,’ or inactivated immunoglobulin genes, (3) ‘TEC,’ or transcripts to be experimentally confirmed, (4) ‘TR_V_gene,’ or T-cell receptor genes, (5) ‘lncRNA,’ or long non-coding RNAs, (6) ‘miRNA,’ or microRNAs, (7) ‘miscRNA,’ or miscellaneous other RNAs, (8) ‘processed_pseudogene,’ or pseudogenes that lack introns, (9) ‘protein_coding,’ or transcripts that contain an open reading frame, (10) ‘rRNA_pseudogene,’ or non-coding ribosomal RNAs predicted to be a pseudogenes by the Ensembl pipeline, (11) ‘snRNA,’ or small nuclear RNAs, (12) ‘snoRNA,’ or small nucleolar RNA, (13) ‘transcribed_processed_pseudogene,’ or pseudogenes that lack introns and have expression indicated by locus-specific transcripts, (14) ‘transcribed_unitary_pseudogene,’ or pseudogenes where the presence of locus-specific transcripts indicates expression and there is an active orthologue in another species, (15) ‘transcribed_unprocessed_pseudogene,’ or pseudogenes with introns and have expression indicated by locus-specific transcripts, and (16) ‘unprocessed_pseudogene,’ or pseudogenes with introns. (A) Heatmap of proportions of transcripts across experimental categories. (B) Heatmap of proportions of transcripts across functional categories." />
 <figcaption aria-hidden="true"><span>Figure 5:</span> <strong>Evaluation of the functional composition of experimentally-derived categories of transcripts.</strong>
 Transcript experimental categories are
 (1) direct transcripts,
@@ -346,7 +347,7 @@ Transcript functional categories are
 (11) ‘snRNA,’ or small nuclear RNAs,
 (12) ‘snoRNA,’ or small nucleolar RNA,
 (13) ‘transcribed_processed_pseudogene,’ or pseudogenes that lack introns and have expression indicated by locus-specific transcripts,
-(14) ‘transcribed_unitary_pseudogene’, or pseudogenes where the presence of locus-specific transcripts indicates expression and there is an active orthologue in another species,
+(14) ‘transcribed_unitary_pseudogene,’ or pseudogenes where the presence of locus-specific transcripts indicates expression and there is an active orthologue in another species,
 (15) ‘transcribed_unprocessed_pseudogene,’ or pseudogenes with introns and have expression indicated by locus-specific transcripts, and
 (16) ‘unprocessed_pseudogene,’ or pseudogenes with introns.
 (A) Heatmap of proportions of transcripts across experimental categories.
@@ -395,10 +396,17 @@ Prior to Neural Architectural search optimization,
 a simple three-layer network with leaky relu activation functions was trained on the CPTAC datasets.</figcaption>
 </figure>
 </div>
+<div id="fig:cross_model_comparison_full" class="fignos">
+<figure>
+<img src="images/sup_fig3_cross_model_comparison_full.svg" style="width:100.0%" data-tag="8 - figure supplement 3" alt="Figure 8 - figure supplement 3: Comparison of four model types via 100x2 cross validation with full whisker coverage. A rendition of figure 1E, but with full whisker coverage." />
+<figcaption aria-hidden="true"><span>Figure 8 - figure supplement 3:</span> <strong>Comparison of four model types via 100x2 cross validation with full whisker coverage.</strong>
+A rendition of figure 1E, but with full whisker coverage.</figcaption>
+</figure>
+</div>
 <div id="fig:all_kde" class="fignos">
 <figure>
-<img src="images/sup_fig3_all_kde.svg" style="width:100.0%" data-tag="8 - figure supplement 3" alt="Figure 8 - figure supplement 3: Model interpretation evaluating transcript impact on specific protein predictions. SHAP analysis was performed for several of the most well-predicted proteins using all samples in the dataset. A kernel density graph (KDE) was plotted for mean absolute SHAP (y axis) versus spearman coefficient (x axis) for each transcript’s relation to (A) CAVIN1, (B) FERMT2, (C) FLNA, (D) HCLS1, (E) HK3, (F) MCM3, (G) MCM4, (H) MCM6, (I) MMP14, (J) P4HB, (K) PTPN6, (L) SMC2, (M) STAT1, and (N) VCL proteins specifically." />
-<figcaption aria-hidden="true"><span>Figure 8 - figure supplement 3:</span> <strong>Model interpretation evaluating transcript impact on specific protein predictions.</strong>
+<img src="images/sup_fig4_all_kde.svg" style="width:100.0%" data-tag="9 - figure supplement 4" alt="Figure 9 - figure supplement 4: Model interpretation evaluating transcript impact on specific protein predictions. SHAP analysis was performed for several of the most well-predicted proteins using all samples in the dataset. A kernel density graph (KDE) was plotted for mean absolute SHAP (y axis) versus spearman coefficient (x axis) for each transcript’s relation to (A) CAVIN1, (B) FERMT2, (C) FLNA, (D) HCLS1, (E) HK3, (F) MCM3, (G) MCM4, (H) MCM6, (I) MMP14, (J) P4HB, (K) PTPN6, (L) SMC2, (M) STAT1, and (N) VCL proteins specifically." />
+<figcaption aria-hidden="true"><span>Figure 9 - figure supplement 4:</span> <strong>Model interpretation evaluating transcript impact on specific protein predictions.</strong>
 SHAP analysis was performed for several of the most well-predicted proteins using all samples in the dataset.
 A kernel density graph (KDE) was plotted for mean absolute SHAP (y axis) versus spearman coefficient (x axis) for each transcript’s relation to
 (A) CAVIN1,
@@ -622,7 +630,7 @@ proteins specifically.</figcaption>
 <div class="csl-left-margin">22. </div><div class="csl-right-inline"><strong>Simplified and Unified Access to Cancer Proteogenomic Data</strong> <div class="csl-block">Caleb M Lindgren, David W Adams, Benjamin Kimball, Hannah Boekweg, Sadie Tayler, Samuel L Pugh, Samuel H Payne</div> <em>Journal of Proteome Research</em> (2021-02-09) <a href="https://doi.org/gt3tvb">https://doi.org/gt3tvb</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1021/acs.jproteome.0c00919">10.1021/acs.jproteome.0c00919</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/33560848">33560848</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8022323">PMC8022323</a></div></div>
 </div>
 <div id="ref-U5iCRSdT" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">23. </div><div class="csl-right-inline"><strong>Multi-Objective NAS with Ax — PyTorch Tutorials 2.3.0+cu121 documentation</strong> <a href="https://pytorch.org/tutorials/intermediate/ax_multiobjective_nas_tutorial.html">https://pytorch.org/tutorials/intermediate/ax_multiobjective_nas_tutorial.html</a></div>
+<div class="csl-left-margin">23. </div><div class="csl-right-inline"><strong>Multi-Objective NAS with Ax — PyTorch Tutorials 2.4.0+cu124 documentation</strong> <a href="https://pytorch.org/tutorials/intermediate/ax_multiobjective_nas_tutorial.html">https://pytorch.org/tutorials/intermediate/ax_multiobjective_nas_tutorial.html</a></div>
 </div>
 <div id="ref-1DxcNZqTn" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">24. </div><div class="csl-right-inline"><a href="http://papers.nips.cc/paper/7062-a-unified-approach-to-interpreting-model-predictions.pdf">http://papers.nips.cc/paper/7062-a-unified-approach-to-interpreting-model-predictions.pdf</a></div>
@@ -634,10 +642,10 @@ proteins specifically.</figcaption>
 <div class="csl-left-margin">26. </div><div class="csl-right-inline"><strong>PyTorch Lightning</strong> <div class="csl-block">William Falcon, The PyTorch Lightning team</div> (2019-03) <a href="https://github.com/Lightning-AI/lightning">https://github.com/Lightning-AI/lightning</a></div>
 </div>
 <div id="ref-7vpz6T76" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">27. </div><div class="csl-right-inline"><strong>facebook/Ax</strong> <div class="csl-block">Meta</div> (2024-07-15) <a href="https://github.com/facebook/Ax">https://github.com/facebook/Ax</a></div>
+<div class="csl-left-margin">27. </div><div class="csl-right-inline"><strong>facebook/Ax</strong> <div class="csl-block">Meta</div> (2024-07-25) <a href="https://github.com/facebook/Ax">https://github.com/facebook/Ax</a></div>
 </div>
 <div id="ref-1BMsTBxbL" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">28. </div><div class="csl-right-inline"><strong>lanpa/tensorboardX</strong> <div class="csl-block">Tzu-Wei Huang</div> (2024-07-16) <a href="https://github.com/lanpa/tensorboardX">https://github.com/lanpa/tensorboardX</a></div>
+<div class="csl-left-margin">28. </div><div class="csl-right-inline"><strong>lanpa/tensorboardX</strong> <div class="csl-block">Tzu-Wei Huang</div> (2024-07-25) <a href="https://github.com/lanpa/tensorboardX">https://github.com/lanpa/tensorboardX</a></div>
 </div>
 <div id="ref-A42hbSau" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">29. </div><div class="csl-right-inline"><strong>Scikit-learn: Machine Learning in Python</strong> <div class="csl-block">Fabian Pedregosa, Gaël Varoquaux, Alexandre Gramfort, Vincent Michel, Bertrand Thirion, Olivier Grisel, Mathieu Blondel, Peter Prettenhofer, Ron Weiss, Vincent Dubourg, … Édouard Duchesnay</div> <em>Journal of Machine Learning Research</em> (2011) <a href="http://jmlr.org/papers/v12/pedregosa11a.html">http://jmlr.org/papers/v12/pedregosa11a.html</a></div>
