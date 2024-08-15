@@ -258,8 +258,6 @@ content/07.acknowledgements.md:5:NIGMS
 content/89.supplementary-materials.md:3:dataset
 content/89.supplementary-materials.md:3:dataset
 content/89.supplementary-materials.md:4:dataset
-content/89.supplementary-materials.md:4:trainining
-content/89.supplementary-materials.md:5:addiional
 content/89.supplementary-materials.md:5:justTargetDataset
 content/89.supplementary-materials.md:6:allDatasets
 content/89.supplementary-materials.md:6:datasets

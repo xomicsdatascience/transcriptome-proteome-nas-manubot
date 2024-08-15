@@ -1394,8 +1394,8 @@
       "date-parts": [
         [
           "2024",
-          7,
-          25
+          8,
+          15
         ]
       ]
     },
@@ -1437,8 +1437,8 @@
       "date-parts": [
         [
           "2024",
-          7,
-          25
+          8,
+          15
         ]
       ]
     },
@@ -1466,8 +1466,8 @@
       "date-parts": [
         [
           "2024",
-          7,
-          25
+          8,
+          15
         ]
       ]
     },
@@ -1494,8 +1494,8 @@
       "date-parts": [
         [
           "2024",
-          7,
-          25
+          8,
+          15
         ]
       ]
     },
@@ -1503,8 +1503,8 @@
       "date-parts": [
         [
           "2024",
-          7,
-          25
+          8,
+          14
         ]
       ]
     }
@@ -1528,8 +1528,8 @@
       "date-parts": [
         [
           "2024",
-          7,
-          25
+          8,
+          15
         ]
       ]
     },
@@ -1537,8 +1537,8 @@
       "date-parts": [
         [
           "2024",
-          7,
-          25
+          8,
+          13
         ]
       ]
     }
@@ -1553,8 +1553,8 @@
       "date-parts": [
         [
           "2024",
-          7,
-          25
+          8,
+          15
         ]
       ]
     },
@@ -1563,14 +1563,14 @@
   {
     "id": "U5iCRSdT",
     "type": "webpage",
-    "title": "Multi-Objective NAS with Ax — PyTorch Tutorials 2.4.0+cu124 documentation",
+    "title": "Multi-Objective NAS with Ax — PyTorch Tutorials 2.4.0+cu121 documentation",
     "URL": "https://pytorch.org/tutorials/intermediate/ax_multiobjective_nas_tutorial.html",
     "accessed": {
       "date-parts": [
         [
           "2024",
-          7,
-          25
+          8,
+          15
         ]
       ]
     },

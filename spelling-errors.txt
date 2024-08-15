@@ -1,5 +1,4 @@
 accuracies
-addiional
 Alexandre
 allDatasets
 benchmarked
@@ -69,8 +68,8 @@ pre
 Preprocessing
 proteogenomics
 proteome
-Proteomes
-Proteomic
+proteomes
+proteomic
 Proteomics
 pseudogene
 pseudogenes
@@ -98,7 +97,6 @@ TEC
 tensorboardX
 TK
 torchx
-trainining
 transcriptome
 transcriptomes
 transcriptomic

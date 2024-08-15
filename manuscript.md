@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2024-07-25'
+date-meta: '2024-08-15'
 author-meta:
 - Caleb W. Cranney
 - Jesse G. Meyer
@@ -20,11 +20,11 @@ header-includes: |
   <meta name="citation_title" content="Multi-Dataset Integration and Residual Connections Improve Proteome Prediction from Transcriptomics Using Deep Learning" />
   <meta property="og:title" content="Multi-Dataset Integration and Residual Connections Improve Proteome Prediction from Transcriptomics Using Deep Learning" />
   <meta property="twitter:title" content="Multi-Dataset Integration and Residual Connections Improve Proteome Prediction from Transcriptomics Using Deep Learning" />
-  <meta name="dc.date" content="2024-07-25" />
-  <meta name="citation_publication_date" content="2024-07-25" />
-  <meta property="article:published_time" content="2024-07-25" />
-  <meta name="dc.modified" content="2024-07-25T21:37:52+00:00" />
-  <meta property="article:modified_time" content="2024-07-25T21:37:52+00:00" />
+  <meta name="dc.date" content="2024-08-15" />
+  <meta name="citation_publication_date" content="2024-08-15" />
+  <meta property="article:published_time" content="2024-08-15" />
+  <meta name="dc.modified" content="2024-08-15T14:37:10+00:00" />
+  <meta property="article:modified_time" content="2024-08-15T14:37:10+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -49,9 +49,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/" />
   <meta name="citation_pdf_url" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/5d752f7c744feeb2a270e6124d4f076d04dec620/" />
-  <meta name="manubot_html_url_versioned" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/5d752f7c744feeb2a270e6124d4f076d04dec620/" />
-  <meta name="manubot_pdf_url_versioned" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/5d752f7c744feeb2a270e6124d4f076d04dec620/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/f826ac993410949d05d28d35568804346512980f/" />
+  <meta name="manubot_html_url_versioned" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/f826ac993410949d05d28d35568804346512980f/" />
+  <meta name="manubot_pdf_url_versioned" content="https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/f826ac993410949d05d28d35568804346512980f/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -73,10 +73,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/5d752f7c744feeb2a270e6124d4f076d04dec620/))
+([permalink](https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/f826ac993410949d05d28d35568804346512980f/))
 was automatically generated
-from [xomicsdatascience/transcriptome-proteome-nas-manubot@5d752f7](https://github.com/xomicsdatascience/transcriptome-proteome-nas-manubot/tree/5d752f7c744feeb2a270e6124d4f076d04dec620)
-on July 25, 2024.
+from [xomicsdatascience/transcriptome-proteome-nas-manubot@f826ac9](https://github.com/xomicsdatascience/transcriptome-proteome-nas-manubot/tree/f826ac993410949d05d28d35568804346512980f)
+on August 15, 2024.
 </em></small>
 
 
@@ -394,8 +394,8 @@ This work was funded by the National Institute of General Medical Sciences (NIGM
 ## Supplementary Materials {.page_break_before}
 
 ![**Comparing all dataset use in training vs. only target dataset use in training.**
-Target dataset had an 80:20 trainining:validation split for all replicate calculations. 
-In the justTargetDataset runs, no addiional changes were made. 
+A 100x2 cross validation applied to the target dataset in question. 
+In the justTargetDataset runs, no additional changes were made. 
 In the allDatasets runs, the training data was supplemented with all full non-target datasets.](images/sup_fig1_allVsTargetDatasetBoxplot.svg){#fig:allVsTargetDatasetBoxplot tag="6 - figure supplement 1" width="100%"}
 
 ![**Manually designed neural network architecture.**
