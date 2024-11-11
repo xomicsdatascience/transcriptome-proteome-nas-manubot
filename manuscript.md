@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2024-08-15'
+date-meta: '2024-11-11'
 author-meta:
 - Caleb W. Cranney
 - Jesse G. Meyer
@@ -20,11 +20,11 @@ header-includes: |
   <meta name="citation_title" content="Multi-Dataset Integration and Residual Connections Improve Proteome Prediction from Transcriptomics Using Deep Learning" />
   <meta property="og:title" content="Multi-Dataset Integration and Residual Connections Improve Proteome Prediction from Transcriptomics Using Deep Learning" />
   <meta property="twitter:title" content="Multi-Dataset Integration and Residual Connections Improve Proteome Prediction from Transcriptomics Using Deep Learning" />
-  <meta name="dc.date" content="2024-08-15" />
-  <meta name="citation_publication_date" content="2024-08-15" />
-  <meta property="article:published_time" content="2024-08-15" />
-  <meta name="dc.modified" content="2024-08-15T14:37:10+00:00" />
-  <meta property="article:modified_time" content="2024-08-15T14:37:10+00:00" />
+  <meta name="dc.date" content="2024-11-11" />
+  <meta name="citation_publication_date" content="2024-11-11" />
+  <meta property="article:published_time" content="2024-11-11" />
+  <meta name="dc.modified" content="2024-11-11T23:43:18+00:00" />
+  <meta property="article:modified_time" content="2024-11-11T23:43:18+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -76,7 +76,7 @@ This manuscript
 ([permalink](https://xomicsdatascience.github.io/transcriptome-proteome-nas-manubot/v/f826ac993410949d05d28d35568804346512980f/))
 was automatically generated
 from [xomicsdatascience/transcriptome-proteome-nas-manubot@f826ac9](https://github.com/xomicsdatascience/transcriptome-proteome-nas-manubot/tree/f826ac993410949d05d28d35568804346512980f)
-on August 15, 2024.
+on November 11, 2024.
 </em></small>
 
 
